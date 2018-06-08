@@ -310,7 +310,22 @@ $('#select1').on("select2:selecting", function(e) {
     <script src="../dist/scripts/flat-ui.js"></script>
 	
 	    <script src="assets/js/application.js"></script>
+	
+	<script>
+	
+var $eventSelect = $("#select1");
+$eventSelect.on("change", function (e) { log("select2:select", e); });
 
+function log(name, event){
+var target=$(event.currentTarget).find("option:selected");
+var value = target.val();
+var tx=target.text();
+alert(tx + ' ' + value);
+
+};
+  
+	</script>
+	
 
   </body>
 </html>
