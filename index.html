@@ -289,15 +289,147 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
 	
 	<br>
 	<br>
+	
+	<div class="container">
+	
+	          <form action="#">
+            <div class="row">
+              <div class="col-md-6">
+                <label class="checkbox" for="checkbox1">
+                  <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                  Checkbox
+                </label>
+                <label class="checkbox" for="checkbox2">
+                  <input type="checkbox" value="" id="checkbox2" checked="checked" data-toggle="checkbox">
+                  Checkbox
+                </label>
+                <label class="checkbox" for="checkbox3">
+                  <input type="checkbox" value="" id="checkbox3" data-toggle="checkbox" disabled="">
+                  Checkbox
+                </label>
+                <label class="checkbox" for="checkbox4">
+                  <input type="checkbox" value="" id="checkbox4" checked="checked" data-toggle="checkbox" disabled="">
+                  Checkbox
+                </label>
+              </div>
+              <div class="col-md-6">
+                <label class="radio" for="radio1">
+                  <input type="radio" name="optionsRadios1" value="" id="radio1" data-toggle="radio">
+                  radio
+                </label>
+                <label class="radio" for="radio2">
+                  <input type="radio" name="optionsRadios1" value="" id="radio2" data-toggle="radio" checked="checked" >
+                  radio
+                </label>
+                <label class="radio" for="radio3">
+                  <input type="radio" name="optionsRadios1" value="" id="radio3" data-toggle="radio" disabled="">
+                  radio
+                </label>
+                <label class="radio" for="radio4">
+                  <input type="radio" name="optionsRadios1" value="" id="radio4" data-toggle="radio" disabled="">
+                  radio
+                </label>
+              </div>
+            </div>
+          </form>
+	
+	</div>
+	
+	
+	<div class="container">
+	<div class="row">
+	<div class="form-group has-feedback">
+  <input type="text" value="" placeholder="With icon" class="form-control" />
+  <span class="form-control-feedback fui-check"></span>
+  </div>
+	</div>
+	</div>
+	
+	<div class="container">
+	          <div class="row">
+            <div class="col-lg-6">
+              <div class="form-group">
+                <div class="input-group input-group-hg input-group-rounded">
+                  <span class="input-group-btn">
+                    <button type="submit" class="btn"><span class="fui-search"></span></button>
+                  </span>
+                  <input type="text" class="form-control" placeholder="Search" id="search-query-2">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search" id="search-query-3">
+                  <span class="input-group-btn">
+                    <button type="submit" class="btn"><span class="fui-search"></span></button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+	
+	</div>
+	
+	<div class="container">
+	<div class="row">
+	<div class="col-md-2">
+		<input type="checkbox" checked data-toggle="switch" name="default-switch" id="switch-01"/>
+	</div>
+	<div class="col-md-2">
+		<div class="bootstrap-switch-square">
+			<input type="checkbox" data-on-text="Left" data-off-text="Right" data-off-color="success" checked data-toggle="switch" name="square-switch" id="switch-02"/>
+		</div>
+	</div>
+	</div>
+	
+	<div class="row">
+	<div class="col-md-2">
+		<input type="checkbox" checked data-on-text="Assm" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-04"/> 
+	</div>
+	
+	</div>
+	
+	<div class="row">
+	<div class="col-md-2">
+	<input type="checkbox" checked disabled data-toggle="switch" name="custom-switch-disabled" id="switch-08" />
+	</div>
+	<div class="col-md-2">
+	<input type="checkbox" checked readonly data-toggle="switch" name="custom-switch-readonly" id="switch-09" />
+	</div>
+	
+	<div class="col-md-2">
+		<div class="bootstrap-switch-square">
+			<input type="checkbox" data-toggle="switch" data-on-text="<i class='fui-check'></i>" data-off-text="<i class='fui-cross'></i>" name="custom-square-switch-icons" id="switch-11"/>
+		</div>
+	</div>
+	</div>
+	
+	</div>
+	
+	
+	</div>
+	
+	<br>
+	
+	<div class="container">
+	<div class="row">
+		<input name="tagsinput" class="tagsinput" data-role="tagsinput" value="Clean,Fresh,Modern,Uniqe"/>
+	</div>
+	<div class="row">
+		<div class="tagsinput-primary">
+			<input name="tagsinput2" class="tagsinput" data-role="tagsinput" value="School,Teacher,Colleague"/>
+		</div>
+		
+		<p data-toggle="tooltip" title="Tooltip copy">Thank You! </p>
+	</div>
+	</div>
 
 	
-	<script>
-	//$("select").select2({dropdownCssClass: 'dropdown-inverse'});
-$('#select1').on("select2:selecting", function(e) { 
-   // what you would like to happen
-   alert(e.selected);
-});
-	</script>
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -324,6 +456,24 @@ alert(tx + ' ' + value);
 
 };
   
+	</script>
+	
+	<script>
+	$('#checkbox1').on('change.radiocheck', function() {
+	alert('Checked');
+});
+
+		$('.radio').on('change.radiocheck', function() {
+	alert('Radio');
+});
+
+	
+	</script>
+	
+	
+	<script>
+	$('#info-color-switch').bootstrapSwitch('onColor', 'success');
+	
 	</script>
 	
 
