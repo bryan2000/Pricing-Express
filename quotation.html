@@ -42,14 +42,15 @@
 	
 	<!-- Address ---------------------------------------------------------------------->
 	
-  	<div class="container">
+  	<div class="container headeraddress">
 	<div class="row">
 		<div class="col-md  bill">
 			<div class="card" >
 			  <div class="card-body">
-				<h5 class="card-title">Vendor</h5>
+				<h5 class="card-title"> 9950</h5>
 				<h6 class="card-subtitle mb-2 text-muted">Majestic</h6>
 				<p class="card-text">5901 Fort Hamilton </p>
+				<a href="#" class="card-link">Terms: Net 15 </a><br>
 				<a href="#" class="card-link">Discount For LO 2%</a><br>
 				<a href="#" class="card-link">Delivery Fee $35 Under $500</a>
 				
@@ -62,7 +63,7 @@
 			  <div class="card-body">
 				<h5 class="card-title">Ship To  </h5>
 					  <div class="input-group ">
-					  <select id="selectaddress" class="form-control select select-info select-sm mbl" data-toggle="select">
+					  <select id="selectaddress" class="form-control select select-info mbl" data-toggle="select">
 						<optgroup label="Style">			  
 						  <option value="0">Store</option>
 						  <option value="1">Warehouse</option>
@@ -75,8 +76,11 @@
 					</div>				
 				<p class="card-text">				
 					241 59th ST 
-					Brooklyn NY 11022
+					Brooklyn NY 11022 <br>
+						Tel: 718-888-8888 &nbsp;&nbsp;
+						Contact: Heor
 				</p>
+	
 				<a href="#" class="card-link">Edit</a>
 				<a href="#" class="card-link">New</a>
 				
@@ -86,6 +90,33 @@
 		</div>
   </div>
   <br>
+  
+  <div class="container headerterm">
+<div class="row">
+	<div class="col-sm po ">
+	<div class="form-group ">
+	<input type="text" class="form-control input-sm" placeholder="PO Number" />
+	<span class="form-control-feedback fui-check"></span>
+	</div>
+	</div>	
+	
+	<div class="col-sm shipdate float-left">
+	<div class="input-group input-group-sm">
+	<div class="input-group-prepend">
+		<span class="input-group-text">Ship Date</span>
+	</div>
+	<input type="date" class="form-control input-md" id="shipdate" >	
+	</div>
+	</div>	
+
+
+</div>
+<div class="row">
+&nbsp;
+</div>
+
+</div>  
+  
   
   <div class="container"> 
 
@@ -108,14 +139,20 @@
           </select>
 		 
 		  &nbsp;
-		  <input type="checkbox" checked data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd"/> 
-		  
+		 
+		 <input type="checkbox" checked data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd"/>  
 	</div>
 		  
  </div>
  
  	<div class="col-md float-left ">
-			  <input type="date" class="form-control input-md" id="qodate"/>	
+		<div class="input-group input-group-sm">
+	<div class="input-group-prepend">
+		<span class="input-group-text">Date</span>
+	</div>
+			  <input type="date" class="form-control input-md" id="qodate" >	
+		</div>
+	  </div>
 	</div>
 	<div class="col-md">
 	&nbsp;
@@ -124,7 +161,7 @@
   </div>  
 		    <div class="row">
 	 	
-            <div class="col-md-9">
+            <div class="col-md">
               <div class="form-group">
                 <div class="input-group input-group-rounded">
                   <span class="input-group-btn">
@@ -134,6 +171,9 @@
                 </div>
               </div>
             </div>
+			<div class="col-md">
+			 <input type="checkbox" checked data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd"/> 
+			</div>
 			
           </div>	
 		
@@ -160,8 +200,8 @@
       <th scope="row">1</th>
       <td>2</td>
       <td>LO-B18</td>
-      <td>L</td>
-	  <td>ASSM</td>
+      <td><input type="checkbox" data-on-text="Left" data-off-text="Right" data-off-color="success" checked data-toggle="switch" name="square-switch" id="switch-02"/></td>
+	  <td><input type="checkbox" checked data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd"/> </td>
 	  <td>L.O BASE</td>
 	  <td>56.00</td>
 	  <td>112.00</td>
@@ -170,8 +210,8 @@
       <th scope="row">2</th>
 	  <td>2</td>
       <td>LO-W1830</td>
-      <td>L</td>
-      <td>ASSM</td>
+      <td><input type="checkbox" data-on-text="Left" data-off-text="Right" data-off-color="success" checked data-toggle="switch" name="square-switch" id="switch-02"/></td>
+      <td><input type="checkbox" checked data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd"/> </td>
 	  <td>L.O BASE</td>
 	  <td>48.00</td>
 	  <td>96.00</td>
@@ -181,7 +221,7 @@
       <td >1</td>
       <td>LO-SB36</td>
 	  <td></td>
-	  <td>KD</td>
+	  <td><input type="checkbox" data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd"/> </td>
 	  <td>L.O Sink Base No Drawer on Top</td>
 	  <td>80.00</td>
 	  <td>80.00</td>
@@ -189,7 +229,7 @@
 	
 	<tr class="table-active">
 		<th></th>
-		<td colspan="2">&nbsp;</td>
+		<td colspan="5">&nbsp;</td>
 		<td colspan="100%" >Subtotal: 288.00</td>	
 	</tr>
   </tbody>
@@ -232,7 +272,7 @@
 		
 		<h6>Discount: -5.76</h6>
 		<h6>Delivery Fee: 35.00</h6>
-		<h5>Subtotal: 317.24 </h5>
+		<h5>Total: 317.24 </h5>
 		</div>
 	</div>
 	</div>  <!-- Bottom -->
