@@ -25,9 +25,9 @@
             <div class="collapse navbar-collapse" id="navbar-collapse-02">
               <ul class="nav navbar-nav mr-auto">
 			  
-			    <li class="active"><a href="#fakelink">Products</a></li>
-			    <li><a href="#">Messages<span class="navbar-unread">5</span></a></li>
-                <li><a href="#">About Us<span class="navbar-new">3</span></a></li>
+			    <li class="active"><a href="#fakelink">Header</a></li>
+			    <li><a href="#">Item<span class="navbar-unread">5</span></a></li>
+                <li><a href="#">Total<span class="navbar-new">3</span></a></li>
             
               
              </ul>
@@ -47,10 +47,11 @@
 		<div class="col-md  bill">
 			<div class="card" >
 			  <div class="card-body">
-				<h5 class="card-title">From Vendor</h5>
+				<h5 class="card-title">Vendor</h5>
 				<h6 class="card-subtitle mb-2 text-muted">Majestic</h6>
 				<p class="card-text">5901 Fort Hamilton </p>
-				<a href="#" class="card-link">Edit</a>
+				<a href="#" class="card-link">Discount For LO 2%</a><br>
+				<a href="#" class="card-link">Delivery Fee $35 Under $500</a>
 				
 			  </div>
 			</div>
@@ -59,13 +60,25 @@
   		<div class="col-md ship">
 			<div class="card" >
 			  <div class="card-body">
-				<h5 class="card-title">Ship To</h5>
-				<h6 class="card-subtitle mb-2 text-muted">Warehouse</h6>
+				<h5 class="card-title">Ship To  </h5>
+					  <div class="input-group ">
+					  <select id="selectaddress" class="form-control select select-info select-sm mbl" data-toggle="select">
+						<optgroup label="Style">			  
+						  <option value="0">Store</option>
+						  <option value="1">Warehouse</option>
+						  <option value="2">Store 1</option>
+						  <option value="3">Warehouse 1</option>
+						  <option value="4">Store 2</option>
+						  <option value="5">Warehouse 2</option>							  
+						</optgroup>
+					  </select>
+					</div>				
 				<p class="card-text">				
 					241 59th ST 
 					Brooklyn NY 11022
 				</p>
 				<a href="#" class="card-link">Edit</a>
+				<a href="#" class="card-link">New</a>
 				
 			  </div>
 			 </div>
@@ -80,7 +93,7 @@
 
   <div class="col-md-6 ">
   <div class="input-group ">
-          <select id="select1" class="form-control select select-primary mbl" data-toggle="select">
+          <select id="selectstyle" class="form-control select select-primary mbl" data-toggle="select">
             <optgroup label="Style">			  
               <option value="0">LO</option>
               <option value="1">OC</option>
@@ -176,7 +189,8 @@
 	
 	<tr class="table-active">
 		<th></th>
-		<td colspan="100%">Subtotal: 288.00</td>	
+		<td colspan="2">&nbsp;</td>
+		<td colspan="100%" >Subtotal: 288.00</td>	
 	</tr>
   </tbody>
 </table>
@@ -188,10 +202,10 @@
 	
 	<div class="container">
 	<div class="row">
-		<div class="col-md border ">
+		<div class="col-md border ">		
 		<div class="row">
 			<div class="col-8 col-sm-6 text-right">
-			 Summary Qty: 
+			 Summary : 
 			</div>
 			<div class="col-4 col-sm-4 ">
 			<b>7</b>
@@ -215,8 +229,10 @@
 		</div>
 		</div>
 		<div class="col-md border">
-		<h5>Total: 304.00 </h5>
-		<h6>Your Saved: 20.00</6>
+		
+		<h6>Discount: -5.76</h6>
+		<h6>Delivery Fee: 35.00</h6>
+		<h5>Subtotal: 317.24 </h5>
 		</div>
 	</div>
 	</div>  <!-- Bottom -->
