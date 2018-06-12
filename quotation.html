@@ -140,7 +140,7 @@
 		 
 		  &nbsp;
 		 
-		 <input type="checkbox" checked data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd"/>  
+		 
 	</div>
 		  
  </div>
@@ -165,16 +165,21 @@
               <div class="form-group">
                 <div class="input-group input-group-rounded">
                   <span class="input-group-btn">
-                    <button type="submit" class="btn"><span class="fui-search"></span></button>
+                    <button type="submit" class="btn"><span class="fui-search"></span></button>					
                   </span>
                   <input type="text" class="form-control" placeholder="Item" id="search-query-2">
+				 <span class="input-group-btn">
+				 &nbsp;&nbsp;
+					<input type="checkbox" checked data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd"/> 
+					</span>
                 </div>
               </div>
             </div>
-			<div class="col-md">
-			 <input type="checkbox" checked data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd"/> 
-			</div>
 			
+			<div class="col-md-3">
+			&nbsp;
+			</div>
+
           </div>	
 		
 	</div> <!-- Header  -->	  
@@ -185,52 +190,66 @@
 	<table class="table table-hover table-sm ">
   <thead class="thead-light">
     <tr>
-      <th scope="col">#</th>
       <th scope="col">QTY</th>
+      
       <th scope="col">ITEM</th>
       <th scope="col">L/R</th>
 	  <th scope="col">KD</th>
 	  <th scope="col">DESCR</th>
 	  <th scope="col">UnitPrice</th>
 	  <th scope="col">Amount</th>
+	  <th scope="col">Stock</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">1</th>
-      <td>2</td>
+      
+      <th scope="row">2</th>
       <td>LO-B18</td>
       <td><input type="checkbox" data-on-text="Left" data-off-text="Right" data-off-color="success" checked data-toggle="switch" name="square-switch" id="switch-02"/></td>
 	  <td><input type="checkbox" checked data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd"/> </td>
 	  <td>L.O BASE</td>
 	  <td>56.00</td>
 	  <td>112.00</td>
+	  <td>In Stock</td>
     </tr>
     <tr>
-      <th scope="row">2</th>
-	  <td>2</td>
+      <th scope="row">2</th>	  
       <td>LO-W1830</td>
       <td><input type="checkbox" data-on-text="Left" data-off-text="Right" data-off-color="success" checked data-toggle="switch" name="square-switch" id="switch-02"/></td>
       <td><input type="checkbox" checked data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd"/> </td>
 	  <td>L.O BASE</td>
 	  <td>48.00</td>
 	  <td>96.00</td>
+	  <td>In Stock</td>
     </tr>
     <tr >
-      <th scope="row">3</th>
-      <td >1</td>
+      
+      <th scope="row">1</th>
       <td>LO-SB36</td>
 	  <td></td>
 	  <td><input type="checkbox" data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd"/> </td>
 	  <td>L.O Sink Base No Drawer on Top</td>
 	  <td>80.00</td>
 	  <td>80.00</td>
+	  <td>Lower</td>
+    </tr>
+	<tr >
+      
+      <th scope="row">2</th>
+      <td>LO-BF3</td>
+	  <td></td>
+	  <td><input type="checkbox" data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd"/> </td>
+	  <td>L.O Base Filler</td>
+	  <td>8.00</td>
+	  <td>16.00</td>
+	  <td>Out</td>
     </tr>
 	
 	<tr class="table-active">
 		<th></th>
-		<td colspan="5">&nbsp;</td>
-		<td colspan="100%" >Subtotal: 288.00</td>	
+		<td colspan="4">&nbsp;</td>
+		<td colspan="100%" >Subtotal: 294.00</td>	
 	</tr>
   </tbody>
 </table>
@@ -256,7 +275,7 @@
 			<h7>Cabinet: </h7>
 			</div>
 			<div class="col-4 col-sm-4 ">
-			5
+			<b>5</b>
 			</div>				
 		</div>
 		<div class="row">
@@ -264,15 +283,36 @@
 			<h7>ACCESSARY: </h7>
 			</div>
 			<div class="col-4 col-sm-4 ">
-			2
+			<b>2</b>
 			</div>				
 		</div>
 		</div>
 		<div class="col-md border">
-		
-		<h6>Discount: -5.76</h6>
-		<h6>Delivery Fee: 35.00</h6>
-		<h5>Total: 317.24 </h5>
+			<div class="row">
+				<div class="col-8 col-sm-6 text-right">
+					<b>Discount:  </b>
+				</div>
+				<div class="col-4 col-sm-4 ">
+					-5.76
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-8 col-sm-6 text-right">
+					<b>Delivery Fee:  </b>
+				</div>
+				<div class="col-4 col-sm-4 ">
+					35.00
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-8 col-sm-6 text-right">
+					<b>Total:  </b>
+				</div>
+				<div class="col-4 col-sm-4 ">
+					317.24
+				</div>
+			</div>			
+				
 		</div>
 	</div>
 	</div>  <!-- Bottom -->
