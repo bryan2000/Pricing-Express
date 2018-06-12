@@ -14,6 +14,19 @@
   </head>
   <body>
   
+  <style>
+  .tablepress-id-1 tbody td tr {
+	
+	font-size: 14px;
+
+	height: 10px;
+}
+.btn-xs {
+  padding: 8px;
+}
+
+  </style>
+  
   	
 	<div class="container">
 	        <nav class="navbar navbar-inverse navbar-expand-lg" role="navigation">
@@ -187,16 +200,16 @@
 	<div class="container">
 
 	<div class="row">	
-	<table class="table table-hover table-sm ">
+	<table class="table table-sm table-hover " >
   <thead class="thead-light">
     <tr>
-      <th scope="col">QTY</th>
-      
+      <th scope="col">QUANTITY</th>
+      <th scope="col">Style</th>
       <th scope="col">ITEM</th>
       <th scope="col">L/R</th>
 	  <th scope="col">KD</th>
-	  <th scope="col">DESCR</th>
-	  <th scope="col">UnitPrice</th>
+	  <th scope="col">Action</th>
+	  <th scope="col">Price</th>
 	  <th scope="col">Amount</th>
 	  <th scope="col">Stock</th>
     </tr>
@@ -204,46 +217,81 @@
   <tbody>
     <tr>
       
-      <th scope="row">2</th>
-      <td>LO-B18</td>
+      <th>
+    
+		 <div class="input-group input-group-rounded float-left">
+		<input type="number" class="form-control flat font-weight-bold input-sm" value="2"/>
+		</div>
+
+	  </th>
+	  <td>LO</td>
+      <td><b data-toggle="tooltip" title="L.O Base"> B18 </b></td>
       <td><input type="checkbox" data-on-text="Left" data-off-text="Right" data-off-color="success" checked data-toggle="switch" name="square-switch" id="switch-02"/></td>
 	  <td><input type="checkbox" checked data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd"/> </td>
-	  <td>L.O BASE</td>
+	  <td>
+		  <div class="btn-group">
+		  <button class="btn btn-xs btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+			More
+		  </button>
+		  <ul class="dropdown-menu" role="menu">
+			<li><a href="#">Modify</a></li>
+			<li><a href="#">Remove</a></li>
+			<li><a href="#">Something else here</a></li>
+			<li class="divider"></li>
+			<li><a href="#">Separated link</a></li>
+		  </ul>
+		</div>
+	  </td>
 	  <td>56.00</td>
 	  <td>112.00</td>
-	  <td>In Stock</td>
+	  <td><b class="text-success">InStock</b></td>
     </tr>
     <tr>
-      <th scope="row">2</th>	  
-      <td>LO-W1830</td>
-      <td><input type="checkbox" data-on-text="Left" data-off-text="Right" data-off-color="success" checked data-toggle="switch" name="square-switch" id="switch-02"/></td>
-      <td><input type="checkbox" checked data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd"/> </td>
+      <th>
+	  <div class="input-group input-group-rounded">
+	  <input type="number" class="form-control flat font-weight-bold input-sm" value="2"/>
+	  </div>
+	  </th>	  
+	  <td>LO</td>
+      <td><b data-toggle="tooltip" title="L.O Base">W1830</b></td>
+      <td><input class="input-sm" type="checkbox" data-on-text="Left" data-off-text="Right" data-off-color="success" checked data-toggle="switch" name="square-switch" id="switch-02"/></td>
+      <td><input class="input-sm" type="checkbox" checked data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd"/> </td>
 	  <td>L.O BASE</td>
 	  <td>48.00</td>
 	  <td>96.00</td>
-	  <td>In Stock</td>
+	  <td><b class="text-success"> InStock</b></td>
     </tr>
     <tr >
       
-      <th scope="row">1</th>
-      <td>LO-SB36</td>
+      <th>
+	  <div class="input-group input-group-rounded">
+	  <input type="number" class="form-control flat font-weight-bold input-sm" value="1"/>
+	  </div>
+	  </th>
+	  <td>LO</td>
+      <td><b data-toggle="tooltip" title="L.O Sink Base No Drawer on Top">SB36 </b></td>
 	  <td></td>
 	  <td><input type="checkbox" data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd"/> </td>
-	  <td>L.O Sink Base No Drawer on Top</td>
+	  <td></td>
 	  <td>80.00</td>
 	  <td>80.00</td>
-	  <td>Lower</td>
+	  <td><b class="text-warning">Lower</b></td>
     </tr>
 	<tr >
       
-      <th scope="row">2</th>
-      <td>LO-BF3</td>
+      <th>
+	  <div class="input-group input-group-rounded">
+	  <input type="number" class="form-control flat font-weight-bold input-sm" value="2"/>
+	  </div>
+	  </th>
+	  <td>LO</td>
+      <td><b data-toggle="tooltip" title="L.O Base Filler">BF3 </b></td>
 	  <td></td>
 	  <td><input type="checkbox" data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd"/> </td>
-	  <td>L.O Base Filler</td>
+	  <td></td>
 	  <td>8.00</td>
 	  <td>16.00</td>
-	  <td>Out</td>
+	  <td><b class="text-danger">Out</b></td>
     </tr>
 	
 	<tr class="table-active">
