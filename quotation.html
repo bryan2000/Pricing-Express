@@ -22,8 +22,9 @@
 	height: 10px;
 }
 .btn-xs {
-  padding: 8px;
+  padding: 9px;
 }
+
 
   </style>
   
@@ -60,9 +61,11 @@
 		<div class="col-md  bill">
 			<div class="card" >
 			  <div class="card-body">
-				<h5 class="card-title"> 9950</h5>
-				<h6 class="card-subtitle mb-2 text-muted">Majestic</h6>
-				<p class="card-text">5901 Fort Hamilton </p>
+				<h5 class="card-title">QU# 9950</h5>
+				<h6 class="card-subtitle mb-2 text-muted">Majestic (688)</h6>
+				<p class="card-text">5901 Fort Hamilton <br>Brooklyn NY 11220 <br>
+				Tel: 718-888-2838
+				</p>
 				<a href="#" class="card-link">Terms: Net 15 </a><br>
 				<a href="#" class="card-link">Discount For LO 2%</a><br>
 				<a href="#" class="card-link">Delivery Fee $35 Under $500</a>
@@ -74,7 +77,7 @@
   		<div class="col-md ship">
 			<div class="card" >
 			  <div class="card-body">
-				<h5 class="card-title">Ship To  </h5>
+				<h5 class="card-title">Ship To (5936)  </h5>
 					  <div class="input-group ">
 					  <select id="selectaddress" class="form-control select select-info mbl" data-toggle="select">
 						<optgroup label="Style">			  
@@ -88,10 +91,10 @@
 					  </select>
 					</div>				
 				<p class="card-text">				
-					241 59th ST 
+					241 59th ST <br>
 					Brooklyn NY 11022 <br>
-						Tel: 718-888-8888 &nbsp;&nbsp;
-						Contact: Heor
+						Tel: 718-888-8888 &nbsp;&nbsp;<br>
+						Contact: Heor Markulander
 				</p>
 	
 				<a href="#" class="card-link">Edit</a>
@@ -108,7 +111,7 @@
 <div class="row">
 	<div class="col-sm po ">
 	<div class="form-group ">
-	<input type="text" class="form-control input-sm" placeholder="PO Number" />
+	<input type="text" class="form-control " placeholder="PO Number" />
 	<span class="form-control-feedback fui-check"></span>
 	</div>
 	</div>	
@@ -135,7 +138,7 @@
 
   <div class="row">
 
-  <div class="col-md-6 ">
+  <div class="col-sm ">
   <div class="input-group ">
           <select id="selectstyle" class="form-control select select-primary mbl" data-toggle="select">
             <optgroup label="Style">			  
@@ -203,12 +206,12 @@
 	<table class="table table-sm table-hover " >
   <thead class="thead-light">
     <tr>
-      <th scope="col">QUANTITY</th>
+      <th scope="col">Quantity</th>
       <th scope="col">Style</th>
       <th scope="col">ITEM</th>
       <th scope="col">L/R</th>
 	  <th scope="col">KD</th>
-	  <th scope="col">Action</th>
+	  <th scope="col"></th>
 	  <th scope="col">Price</th>
 	  <th scope="col">Amount</th>
 	  <th scope="col">Stock</th>
@@ -217,13 +220,15 @@
   <tbody>
     <tr>
       
-      <th>
-    
+      <td>
+			
 		 <div class="input-group input-group-rounded float-left">
-		<input type="number" class="form-control flat font-weight-bold input-sm" value="2"/>
+		 
+		<input type="number" max="99" min="1" class="form-control flat font-weight-bold input-sm" value="2"/>
+		
 		</div>
 
-	  </th>
+	  </td>
 	  <td>LO</td>
       <td><b data-toggle="tooltip" title="L.O Base"> B18 </b></td>
       <td><input type="checkbox" data-on-text="Left" data-off-text="Right" data-off-color="success" checked data-toggle="switch" name="square-switch" id="switch-02"/></td>
@@ -231,7 +236,7 @@
 	  <td>
 		  <div class="btn-group">
 		  <button class="btn btn-xs btn-default dropdown-toggle" type="button" data-toggle="dropdown">
-			More
+			Action
 		  </button>
 		  <ul class="dropdown-menu" role="menu">
 			<li><a href="#">Modify</a></li>
@@ -247,57 +252,136 @@
 	  <td><b class="text-success">InStock</b></td>
     </tr>
     <tr>
-      <th>
+      <td>
+	  
 	  <div class="input-group input-group-rounded">
-	  <input type="number" class="form-control flat font-weight-bold input-sm" value="2"/>
+	  <input type="number" max="99" min="1" class="form-control flat font-weight-bold input-sm" value="2"/>
 	  </div>
-	  </th>	  
+	  
+	  </td>	  
 	  <td>LO</td>
       <td><b data-toggle="tooltip" title="L.O Base">W1830</b></td>
       <td><input class="input-sm" type="checkbox" data-on-text="Left" data-off-text="Right" data-off-color="success" checked data-toggle="switch" name="square-switch" id="switch-02"/></td>
       <td><input class="input-sm" type="checkbox" checked data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd"/> </td>
-	  <td>L.O BASE</td>
+	  <td>
+		<div class="btn-group">
+		  <button class="btn btn-xs btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+			Action
+		  </button>
+		  <ul class="dropdown-menu" role="menu">
+			<li><a href="#">Modify</a></li>
+			<li><a href="#">Remove</a></li>
+			<li><a href="#">Something else here</a></li>
+			<li class="divider"></li>
+			<li><a href="#">Separated link</a></li>
+		  </ul>
+		</div>
+	  </td>
 	  <td>48.00</td>
 	  <td>96.00</td>
 	  <td><b class="text-success"> InStock</b></td>
     </tr>
     <tr >
       
-      <th>
+      <td>
+	  
 	  <div class="input-group input-group-rounded">
-	  <input type="number" class="form-control flat font-weight-bold input-sm" value="1"/>
+	  <input type="number" max="99" min="1" class="form-control flat font-weight-bold input-sm" value="1"/>
 	  </div>
-	  </th>
+	  
+	  </td>
 	  <td>LO</td>
       <td><b data-toggle="tooltip" title="L.O Sink Base No Drawer on Top">SB36 </b></td>
 	  <td></td>
 	  <td><input type="checkbox" data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd"/> </td>
-	  <td></td>
+	  <td>
+	  	<div class="btn-group">
+		  <button class="btn btn-xs btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+			Action
+		  </button>
+		  <ul class="dropdown-menu" role="menu">
+			<li><a href="#">Modify</a></li>
+			<li><a href="#">Remove</a></li>
+			<li><a href="#">Something else here</a></li>
+			<li class="divider"></li>
+			<li><a href="#">Separated link</a></li>
+		  </ul>
+		</div>
+	  </td>
 	  <td>80.00</td>
 	  <td>80.00</td>
-	  <td><b class="text-warning">Lower</b></td>
+	  <td><b class="text-warning">Low</b></td>
     </tr>
 	<tr >
       
-      <th>
+      <td>
+	  
 	  <div class="input-group input-group-rounded">
-	  <input type="number" class="form-control flat font-weight-bold input-sm" value="2"/>
+	  <input type="number" max="99" min="1" class="form-control flat font-weight-bold input-sm" value="2"/>
 	  </div>
-	  </th>
+	  
+	  </td>
 	  <td>LO</td>
       <td><b data-toggle="tooltip" title="L.O Base Filler">BF3 </b></td>
 	  <td></td>
 	  <td><input type="checkbox" data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd"/> </td>
-	  <td></td>
+	  <td>
+	  	<div class="btn-group">
+		  <button class="btn btn-xs btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+			Action
+		  </button>
+		  <ul class="dropdown-menu" role="menu">
+			<li><a href="#">Modify</a></li>
+			<li><a href="#">Remove</a></li>
+			<li><a href="#">Something else here</a></li>
+			<li class="divider"></li>
+			<li><a href="#">Separated link</a></li>
+		  </ul>
+		</div>
+	  </td>
 	  <td>8.00</td>
 	  <td>16.00</td>
 	  <td><b class="text-danger">Out</b></td>
     </tr>
 	
+	<tr >
+      
+      <td>
+	  
+	  <div class="input-group input-group-rounded">
+	  <input type="number" max="99" min="1" class="form-control flat font-weight-bold input-sm" value="1"/>
+	  </div>
+	  
+	  </td>
+	  <td>LO</td>
+      <td><b data-toggle="tooltip" title="L.O Base Filler">RBCB3327 </b></td>
+	 <td><input class="input-sm" type="checkbox" data-on-text="Left" data-off-text="Right" data-off-color="success" data-toggle="switch" name="square-switch" id="switch-02"/></td>
+	  <td><input type="checkbox" data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd"/> </td>
+	  <td>
+	  	<div class="btn-group">
+		  <button class="btn btn-xs btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+			Action
+		  </button>
+		  <ul class="dropdown-menu" role="menu">
+			<li><a href="#">Modify</a></li>
+			<li><a href="#">Remove</a></li>
+			<li><a href="#">Something else here</a></li>
+			<li class="divider"></li>
+			<li><a href="#">Separated link</a></li>
+		  </ul>
+		</div>
+	  </td>
+	  <td>128.00</td>
+	  <td>128.00</td>
+	  <td><b class="text-warning">Low<b></td>
+    </tr>	
+	
+	
+	
 	<tr class="table-active">
 		<th></th>
 		<td colspan="4">&nbsp;</td>
-		<td colspan="100%" >Subtotal: 294.00</td>	
+		<td colspan="100%" >Subtotal: 432.00</td>	
 	</tr>
   </tbody>
 </table>
@@ -315,7 +399,7 @@
 			 Summary : 
 			</div>
 			<div class="col-4 col-sm-4 ">
-			<b>7</b>
+			<b>8</b>
 			</div>		
 		</div>	
 		<div class="row">
@@ -323,7 +407,7 @@
 			<h7>Cabinet: </h7>
 			</div>
 			<div class="col-4 col-sm-4 ">
-			<b>5</b>
+			<b>6</b>
 			</div>				
 		</div>
 		<div class="row">
@@ -341,7 +425,7 @@
 					<b>Discount:  </b>
 				</div>
 				<div class="col-4 col-sm-4 ">
-					-5.76
+					-8.64
 				</div>
 			</div>
 			<div class="row">
@@ -357,7 +441,7 @@
 					<b>Total:  </b>
 				</div>
 				<div class="col-4 col-sm-4 ">
-					317.24
+					458.36
 				</div>
 			</div>			
 				
