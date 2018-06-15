@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Quotation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="flatui/css/vendor/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Loading Flat UI Pro -->
+    <link href="flatui/css/flat-ui.css" rel="stylesheet">
+	
+	
+ 	
+
+  </head>
+
+  
+  <style>
+  .tablepress-id-1 tbody td tr {
+	
+	font-size: 14px;
+
+	height: 10px;
+}
+.btn-xs {
+  padding: 9px;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    overflow-y: auto;
+
+ padding-top: 60px; /* padding for fixed navbar */
+}
+
+/* hidden spacer before sections for proper offset */
+
+.scroll-to-top {
+  z-index: 1042;
+  right: 1rem;
+  bottom: 1rem;
+  display: none;
+}
+
+.scroll-to-top a {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: rgba(33, 37, 41, 0.5);
+  line-height: 3.1rem;
+}
+
+#mainNav {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  font-weight: 700;
+  font-family: 'Montserrat';
+}
+
+#mainNav .navbar-brand {
+  color: #fff;
+}
+
+#mainNav .navbar-nav {
+  margin-top: 0.1rem;
+  letter-spacing: 0.0625rem;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link {
+  color: #fff;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+  color: #18BC9C;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
+  color: #fff;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
+  color: #18BC9C;
+}
+
+#mainNav .navbar-toggler {
+  font-size: 80%;
+  padding: 0.8rem;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+  }
+  #mainNav .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: font-size 0.3s;
+    -moz-transition: font-size 0.3s;
+    transition: font-size 0.3s;
+  }
+  #mainNav .navbar-nav {
+    margin-top: 0;
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
+    color: #fff;
+    background: #18BC9C;
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
+    color: #fff;
+    background: #18BC9C;
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.5em;
+  }
+}
+
+  </style>
+ 
+<body data-spy="scroll" data-target="#navbarEZQUO" data-offset="70">
+   
+  	
+
+	        <nav class="navbar navbar-expand-md fixed-top navbar-inverse " id="mainNav">
+			<div class="container">
+            <a class="navbar-brand" href="#">EZ-QUO</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarEZQUO">
+            </button>
+			
+
+            <div class="collapse navbar-collapse" id="navbarEZQUO">
+              <ul class="nav navbar-nav mr-auto">
+			  
+			    <li class="nav-item">
+					<a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#header">Header</a>
+				</li>
+			    <li class="nav-item">
+					<a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#item">Item </a>
+				</li>
+                <li class="nav-item">
+					<a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#bottom">Total</a>
+				</li>
+            
+              
+             </ul>
+
+			
+         
+
+          </div><!-- /.navbar-collapse -->
+		  </div>
+        </nav><!-- /navbar -->
+<main class="container">
+	
+	<!-- Address ---------------------------------------------------------------------->
+	<section id="header">
+  	<div class="container headeraddress">
+	<div class="row">
+		<div class="col-md  bill">
+			<div class="card" >
+			  <div class="card-body">
+				<h5 class="card-title">QU# 9950</h5>
+				<h6 class="card-subtitle mb-2 text-muted">Majestic (688)</h6>
+				<p class="card-text">5901 Fort Hamilton <br>Brooklyn NY 11220 <br>
+				Tel: 718-888-2838
+				</p>
+				<a href="#" class="card-link">Terms: Net 15 </a><br>
+				<a href="#" class="card-link">Discount For LO 2%</a><br>
+				<a href="#" class="card-link">Delivery Fee $35 Under $500</a>
+				
+			  </div>
+			</div>
+		  
+		  </div>
+  		<div class="col-md ship">
+			<div class="card" >
+			  <div class="card-body">
+				<h5 class="card-title">Ship To (5936)  </h5>
+					  <div class="input-group ">
+					  <select id="selectaddress" class="form-control select select-info mbl" data-toggle="select">
+						<optgroup label="Style">			  
+						  <option value="0">Store</option>
+						  <option value="1">Warehouse</option>
+						  <option value="2">Store 1</option>
+						  <option value="3">Warehouse 1</option>
+						  <option value="4">Store 2</option>
+						  <option value="5">Warehouse 2</option>							  
+						</optgroup>
+					  </select>
+					</div>				
+				<p class="card-text">				
+					241 59th ST <br>
+					Brooklyn NY 11022 <br>
+						Tel: 718-888-8888 &nbsp;&nbsp;<br>
+						Contact: Heor Markulander
+				</p>
+	
+				<a href="#" class="card-link">Edit</a>
+				<a href="#" class="card-link">New</a>
+				
+			  </div>
+			 </div>
+
+		</div>
+  </div>
+  <br>
+  </section> <!-- header -->
+  
+  
+  
+  <section id="item">
+  <div class="container ">
+<div class="row">
+	<div class="col-sm po ">
+	<div class="form-group ">
+	<input type="text" class="form-control " placeholder="PO Number" />
+	<span class="form-control-feedback fui-check"></span>
+	</div>
+	</div>	
+	
+	<div class="col-sm shipdate float-left">
+	<div class="input-group input-group-sm">
+	<div class="input-group-prepend">
+		<span class="input-group-text">Ship Date</span>
+	</div>
+	<input type="date" class="form-control input-md" id="shipdate" >	
+	</div>
+	</div>	
+
+
+</div>
+<div class="row">
+&nbsp;
+</div>
+
+</div>  
+  
+  
+  <div class="container"> 
+
+  <div class="row">
+
+  <div class="col-sm ">
+  <div class="input-group ">
+          <select id="selectstyle" class="form-control select select-primary mbl" data-toggle="select">
+            <optgroup label="Style">			  
+              <option value="0">LO</option>
+              <option value="1">OC</option>
+              <option value="2">MW</option>
+              <option value="3">SN</option>
+              <option value="4">AC</option>
+              <option value="5">CB</option>
+              <option value="6">CGS</option>
+              <option value="7">MA</option>			  
+			  
+            </optgroup>
+          </select>
+		 
+		  &nbsp;
+		 
+		 
+	</div>
+		  
+ </div>
+ 
+ 	<div class="col-md float-left ">
+		<div class="input-group input-group-sm">
+	<div class="input-group-prepend">
+		<span class="input-group-text">Date</span>
+	</div>
+			  <input type="date" class="form-control input-md" id="qodate" >	
+		</div>
+	  </div>
+	</div>
+	<div class="col-md">
+	&nbsp;
+	</div>
+	
+  </div>  
+		    <div class="row">
+	 	
+            <div class="col-md">
+              <div class="form-group">
+                <div class="input-group input-group-rounded">
+                  <span class="input-group-btn">
+                    <button type="submit" class="btn"><span class="fui-search"></span></button>					
+                  </span>
+                  <input type="text" class="form-control" placeholder="Item" id="search-query-2">
+				 <span class="input-group-btn">
+				 &nbsp;&nbsp;
+					<input type="checkbox" checked data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd"/> 
+					</span>
+                </div>
+              </div>
+            </div>
+			
+			<div class="col-md-3">
+			&nbsp;
+			</div>
+
+          </div>	
+		
+	</div> <!-- Header  -->	  
+	
+	<div class="container">
+
+	<div class="row">	
+	<table class="table table-sm table-hover " >
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">Quantity</th>
+      <th scope="col">Style</th>
+      <th scope="col">ITEM</th>
+      <th scope="col">L/R</th>
+	  <th scope="col">KD</th>
+	  <th scope="col"></th>
+	  <th scope="col">Price</th>
+	  <th scope="col">Amount</th>
+	  <th scope="col">Stock</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      
+      <td>
+			
+		 <div class="input-group input-group-rounded float-left">
+		 
+		<input type="number" max="99" min="1" class="form-control flat font-weight-bold input-sm" value="2"/>
+		
+		</div>
+
+	  </td>
+	  <td>LO</td>
+      <td><b data-toggle="tooltip" title="L.O Base"> B18 </b></td>
+      <td><input type="checkbox" data-on-text="Left" data-off-text="Right" data-off-color="success" checked data-toggle="switch" name="square-switch" id="switch-02"/></td>
+	  <td><input type="checkbox" checked data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd"/> </td>
+	  <td>
+		  <div class="btn-group">
+		  <button class="btn btn-xs btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+			Action
+		  </button>
+		  <ul class="dropdown-menu" role="menu">
+			<li><a href="#">Modify</a></li>
+			<li><a href="#">Remove</a></li>
+			<li><a href="#">Something else here</a></li>
+			<li class="divider"></li>
+			<li><a href="#">Separated link</a></li>
+		  </ul>
+		</div>
+	  </td>
+	  <td>56.00</td>
+	  <td>112.00</td>
+	  <td><b class="text-success">InStock</b></td>
+    </tr>
+    <tr>
+      <td>
+	  
+	  <div class="input-group input-group-rounded">
+	  <input type="number" max="99" min="1" class="form-control flat font-weight-bold input-sm" value="2"/>
+	  </div>
+	  
+	  </td>	  
+	  <td>LO</td>
+      <td><b data-toggle="tooltip" title="L.O Base">W1830</b></td>
+      <td><input class="input-sm" type="checkbox" data-on-text="Left" data-off-text="Right" data-off-color="success" checked data-toggle="switch" name="square-switch" id="switch-02"/></td>
+      <td><input class="input-sm" type="checkbox" checked data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd"/> </td>
+	  <td>
+		<div class="btn-group">
+		  <button class="btn btn-xs btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+			Action
+		  </button>
+		  <ul class="dropdown-menu" role="menu">
+			<li><a href="#">Modify</a></li>
+			<li><a href="#">Remove</a></li>
+			<li><a href="#">Something else here</a></li>
+			<li class="divider"></li>
+			<li><a href="#">Separated link</a></li>
+		  </ul>
+		</div>
+	  </td>
+	  <td>48.00</td>
+	  <td>96.00</td>
+	  <td><b class="text-success"> InStock</b></td>
+    </tr>
+    <tr >
+      
+      <td>
+	  
+	  <div class="input-group input-group-rounded">
+	  <input type="number" max="99" min="1" class="form-control flat font-weight-bold input-sm" value="1"/>
+	  </div>
+	  
+	  </td>
+	  <td>LO</td>
+      <td><b data-toggle="tooltip" title="L.O Sink Base No Drawer on Top">SB36 </b></td>
+	  <td></td>
+	  <td><input type="checkbox" data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd"/> </td>
+	  <td>
+	  	<div class="btn-group">
+		  <button class="btn btn-xs btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+			Action
+		  </button>
+		  <ul class="dropdown-menu" role="menu">
+			<li><a href="#">Modify</a></li>
+			<li><a href="#">Remove</a></li>
+			<li><a href="#">Something else here</a></li>
+			<li class="divider"></li>
+			<li><a href="#">Separated link</a></li>
+		  </ul>
+		</div>
+	  </td>
+	  <td>80.00</td>
+	  <td>80.00</td>
+	  <td><b class="text-warning">Low</b></td>
+    </tr>
+	<tr >
+      
+      <td>
+	  
+	  <div class="input-group input-group-rounded">
+	  <input type="number" max="99" min="1" class="form-control flat font-weight-bold input-sm" value="2"/>
+	  </div>
+	  
+	  </td>
+	  <td>LO</td>
+      <td><b data-toggle="tooltip" title="L.O Base Filler">BF3 </b></td>
+	  <td></td>
+	  <td><input type="checkbox" data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd"/> </td>
+	  <td>
+	  	<div class="btn-group">
+		  <button class="btn btn-xs btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+			Action
+		  </button>
+		  <ul class="dropdown-menu" role="menu">
+			<li><a href="#">Modify</a></li>
+			<li><a href="#">Remove</a></li>
+			<li><a href="#">Something else here</a></li>
+			<li class="divider"></li>
+			<li><a href="#">Separated link</a></li>
+		  </ul>
+		</div>
+	  </td>
+	  <td>8.00</td>
+	  <td>16.00</td>
+	  <td><b class="text-danger">Out</b></td>
+    </tr>
+	
+	<tr >
+      
+      <td>
+	  
+	  <div class="input-group input-group-rounded">
+	  <input type="number" max="99" min="1" class="form-control flat font-weight-bold input-sm" value="1"/>
+	  </div>
+	  
+	  </td>
+	  <td>LO</td>
+      <td><b data-toggle="tooltip" title="L.O Base Filler">RBCB3327 </b></td>
+	 <td><input class="input-sm" type="checkbox" data-on-text="Left" data-off-text="Right" data-off-color="success" data-toggle="switch" name="square-switch" id="switch-02"/></td>
+	  <td><input type="checkbox" data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd"/> </td>
+	  <td>
+	  	<div class="btn-group">
+		  <button class="btn btn-xs btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+			Action
+		  </button>
+		  <ul class="dropdown-menu" role="menu">
+			<li><a href="#">Modify</a></li>
+			<li><a href="#">Remove</a></li>
+			<li><a href="#">Something else here</a></li>
+			<li class="divider"></li>
+			<li><a href="#">Separated link</a></li>
+		  </ul>
+		</div>
+	  </td>
+	  <td>128.00</td>
+	  <td>128.00</td>
+	  <td><b class="text-warning">Low<b></td>
+    </tr>	
+	
+	
+	
+	<tr class="table-active">
+		<th></th>
+		<td colspan="4">&nbsp;</td>
+		<td colspan="100%" >Subtotal: 432.00</td>	
+	</tr>
+  </tbody>
+</table>
+	</div>	
+	
+	
+	</div>  <!-- Body -->
+	
+	</section> <!-- Item -->
+	
+	<section id="bottom">
+	<div class="container">
+	<div class="row">
+		<div class="col-md border ">		
+		<div class="row">
+			<div class="col-8 col-sm-6 text-right">
+			 Summary : 
+			</div>
+			<div class="col-4 col-sm-4 ">
+			<b>8</b>
+			</div>		
+		</div>	
+		<div class="row">
+			<div class="col-8 col-sm-6 text-right">
+			<h7>Cabinet: </h7>
+			</div>
+			<div class="col-4 col-sm-4 ">
+			<b>6</b>
+			</div>				
+		</div>
+		<div class="row">
+			<div class="col-8 col-sm-6 text-right">
+			<h7>ACCESSARY: </h7>
+			</div>
+			<div class="col-4 col-sm-4 ">
+			<b>2</b>
+			</div>				
+		</div>
+		</div>
+		<div class="col-md border">
+			<div class="row">
+				<div class="col-8 col-sm-6 text-right">
+					<b>Discount:  </b>
+				</div>
+				<div class="col-4 col-sm-4 ">
+					-8.64
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-8 col-sm-6 text-right">
+					<b>Delivery Fee:  </b>
+				</div>
+				<div class="col-4 col-sm-4 ">
+					35.00
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-8 col-sm-6 text-right">
+					<b>Total:  </b>
+				</div>
+				<div class="col-4 col-sm-4 ">
+					458.36
+				</div>
+			</div>			
+				
+		</div>
+	</div>
+	</div>  <!-- Bottom -->
+	</section>
+	
+	</main>
+	
+	<br>
+	<br>
+	<br>
+	
+	
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap 4 requires Popper.js -->
+    <script src="https://unpkg.com/popper.js@1.14.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+
+	
+	
+    <script src="flatui/scripts/flat-ui.js"></script>
+	
+	<script src="flatui/scripts/application.js"></script>
+
+	<script>
+	
+	  // Closes responsive menu when a scroll trigger link is clicked
+	  
+  $('.js-scroll-trigger').click(function() {
+    $('.navbar-collapse').collapse('hide');
+  });
+
+
+	  // Collapse Navbar
+  var navbarCollapse = function() {
+    if ($("#mainNav").offset().top > 100) {
+      $("#mainNav").addClass("navbar-shrink");
+    } else {
+      $("#mainNav").removeClass("navbar-shrink");
+    }
+  };
+	</script>
+	
+
+
+  </body>
+</html>	
