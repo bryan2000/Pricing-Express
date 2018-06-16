@@ -24,11 +24,18 @@
 
 	height: 10px;
 }
+
+
 .btn-xs {
-  padding: 9px;
+  padding: 6px;
 }
 
-
+.circled img {
+	margin-top:10px;
+    display: inline-block;
+    border-radius: 50%;
+	height: 120px;
+	width: 100px;
 
 html {
     scroll-behavior: smooth;
@@ -37,6 +44,9 @@ html {
 body {
     position: relative;
     overflow-y: auto;
+/*	font-size: 12px;
+	line-height: 1.72222;
+*/	
 
  padding-top: 70px; /* padding for fixed navbar */
 }
@@ -56,6 +66,7 @@ body {
   background-color: rgba(33, 37, 41, 0.5);
   line-height: 3.1rem;
 }
+
 
 #mainNav {
   padding-top: 0.1rem;
@@ -91,7 +102,8 @@ body {
 
 #mainNav .navbar-toggler {
   font-size: 80%;
-  padding: 0.8rem;
+  padding: 0.1rem;
+
 }
 
 @media (min-width: 992px) {
@@ -138,6 +150,7 @@ body {
 			<div class="container">
             <a class="navbar-brand" href="#">EZ-QUO</a>
             <button type="button" class="navbar-toggler navbar-toggler-right " data-toggle="collapse" data-target="#navbarEZQUO">
+			
             </button>
 			
 
@@ -251,8 +264,8 @@ body {
   
   <div class="row">
 
-  <div class="col-sm">
-  <img src="flatui/img/portfolio/cabin.png" height="100" width="150" />
+  <div class="col-sm circled">
+  <img id="imgstyle"  src= "flatui/img/style/lo.png"/>
   </div>
   
   
@@ -620,6 +633,21 @@ body {
   };
 	</script>
 	
+	
+	
+	<script>
+	//select2 change img
+
+	$('#selectstyle').on("select2-selected", function(e) { 
+
+		 var data = $("#selectstyle option:selected").text();
+		var imgurl='flatui/img/style/'+data+'.png';
+
+		$('#imgstyle').attr('src',imgurl);
+});
+	
+	
+	</script>
 
 
   </body>
