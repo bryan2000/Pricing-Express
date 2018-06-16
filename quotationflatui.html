@@ -7,10 +7,10 @@
 
 
     <!-- Loading Bootstrap -->
-    <link href="../dist/css/vendor/bootstrap.min.css" rel="stylesheet">
+    <link href="flatui/css/vendor/bootstrap.min.css" rel="stylesheet">
 
     <!-- Loading Flat UI Pro -->
-    <link href="../dist/css/flat-ui.css" rel="stylesheet">
+    <link href="flatui/css/flat-ui.css" rel="stylesheet">
 
  	
 
@@ -38,7 +38,7 @@ body {
     position: relative;
     overflow-y: auto;
 
- padding-top: 60px; /* padding for fixed navbar */
+ padding-top: 70px; /* padding for fixed navbar */
 }
 
 /* hidden spacer before sections for proper offset */
@@ -137,16 +137,14 @@ body {
 	        <nav class="navbar navbar-expand-md fixed-top navbar-inverse " id="mainNav">
 			<div class="container">
             <a class="navbar-brand" href="#">EZ-QUO</a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarEZQUO">
+            <button type="button" class="navbar-toggler navbar-toggler-right " data-toggle="collapse" data-target="#navbarEZQUO">
             </button>
 			
 
             <div class="collapse navbar-collapse" id="navbarEZQUO">
               <ul class="nav navbar-nav mr-auto">
 			  
-			    <li class="nav-item">
-					<a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#header">Header</a>
-				</li>
+		
 			    <li class="nav-item">
 					<a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#item">Item </a>
 				</li>
@@ -163,6 +161,8 @@ body {
           </div><!-- /.navbar-collapse -->
 		  </div>
         </nav><!-- /navbar -->
+		
+		
 <main class="container">
 	
 	<!-- Address ---------------------------------------------------------------------->
@@ -242,14 +242,27 @@ body {
 
 
 </div>
-<div class="row">
-&nbsp;
-</div>
+
 
 </div>  
   
   
   <div class="container"> 
+  
+  <div class="row">
+
+  <div class="col-sm">
+  <img src="flatui/img/portfolio/cabin.png" height="100" width="150" />
+  </div>
+  
+  
+  <div class="col-sm">  
+  
+  </div>
+  <div class="col-sm">
+  &nbsp;
+  </div>
+  </div>
 
   <div class="row">
 
@@ -276,12 +289,12 @@ body {
 		  
  </div>
  
- 	<div class="col-md float-left ">
+ 	<div class="col-sm float-left ">
 		<div class="input-group input-group-sm">
 	<div class="input-group-prepend">
 		<span class="input-group-text">Date</span>
 	</div>
-			  <input type="date" class="form-control input-md" id="qodate" >	
+		 <input type="date" class="form-control input-md" id="qodate" >	
 		</div>
 	  </div>
 	</div>
@@ -581,9 +594,9 @@ body {
     <script src="https://unpkg.com/popper.js@1.14.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
 
 	
-    <script src="../dist/scripts/flat-ui.js"></script>
+    <script src="flatui/scripts/flat-ui.js"></script>
 	
-	<script src="assets/js/application.js"></script>
+	<script src="flatui/scripts/application.js"></script>
 	
 
 
