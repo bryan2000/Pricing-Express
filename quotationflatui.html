@@ -31,11 +31,15 @@
 }
 
 .circled img {
+	cursor:pointer;
 	margin-top:10px;
     display: inline-block;
     border-radius: 50%;
 	height: 120px;
 	width: 100px;
+	
+}
+
 
 html {
     scroll-behavior: smooth;
@@ -269,9 +273,7 @@ body {
   </div>
   
   
-  <div class="col-sm">  
-  
-  </div>
+ 
   <div class="col-sm">
   &nbsp;
   </div>
@@ -289,7 +291,7 @@ body {
               <option value="3">SN</option>
               <option value="4">AC</option>
               <option value="5">CB</option>
-              <option value="6">CGS</option>
+              <option value="6">CSG</option>
               <option value="7">MA</option>			  
 			  
             </optgroup>
@@ -316,7 +318,22 @@ body {
 	</div>
 	
   </div>  
-		    <div class="row">
+  
+  
+  
+  <div  class="container">
+  <div class="row"><!-- button group -->
+  <div class="col-sm">
+	
+  </div> 
+<div class="col-sm">
+
+</div>  
+
+  </div>
+</div>
+		&nbsp;    
+<div class="row">
 	 	
             <div class="col-md">
               <div class="form-group">
@@ -333,10 +350,16 @@ body {
               </div>
             </div>
 			
-			<div class="col-md-3">
-			&nbsp;
+			<div class="col-md">
+			<div class="btn-group" role="group" aria-label="Basic example">
+			  <button type="button" class="btn btn-success">Left</button>
+			  <button type="button" class="btn btn-success">Middle</button>
+			  <button type="button" class="btn btn-success">Right</button>
 			</div>
-
+			
+			</div>
+		
+&nbsp;
           </div>	
 		
 	</div> <!-- Header  -->	  
@@ -638,13 +661,36 @@ body {
 	<script>
 	//select2 change img
 
-	$('#selectstyle').on("select2-selected", function(e) { 
+	$('#selectstyle').on('select2-selected', function(e) { 
 
 		 var data = $("#selectstyle option:selected").text();
 		var imgurl='flatui/img/style/'+data+'.png';
 
 		$('#imgstyle').attr('src',imgurl);
 });
+
+	var imgsize=0;
+	$('#imgstyle').on('click',function(){
+
+	if(imgsize==0){
+		imgsize=1;
+	}
+	else{
+		imgsize=0;
+	}
+	
+
+	if(imgsize===1){
+		$('.circled img').css('height','385');
+		$('.circled img').css('width','256');
+			
+	}
+	else{
+		$('.circled img').css('height','120');
+		$('.circled img').css('width','100');	
+	}
+	
+	});
 	
 	
 	</script>
