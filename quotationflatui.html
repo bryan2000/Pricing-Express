@@ -38,6 +38,7 @@
 	height: 120px;
 	width: 100px;
 	
+	
 }
 
 
@@ -144,6 +145,13 @@ body {
   }
 }
 
+	.btn-status{
+  /*  font-size: 1.3em; */
+   padding:5px;
+ 
+   font-weight: bold;
+}
+
   </style>
  
 <body data-spy="scroll" data-target="#navbarEZQUO" data-offset="70">
@@ -168,11 +176,14 @@ body {
                 <li class="nav-item">
 					<a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#bottom">Total</a>
 				</li>
-            
               
-             </ul>
-
+             </ul>			
 			
+			  <button type="button" class="btn btn-default navbar-btn btn-status ">Wish List</button>&nbsp;
+			  <button type="button" class="btn btn-default navbar-btn btn-status">Save For Later</button>&nbsp;
+			  <button type="button" class="btn btn-default navbar-btn btn-status">Submit</button>&nbsp;
+			
+				
          
 
           </div><!-- /.navbar-collapse -->
@@ -319,20 +330,6 @@ body {
 	
   </div>  
   
-  
-  
-  <div  class="container">
-  <div class="row"><!-- button group -->
-  <div class="col-sm">
-	
-  </div> 
-<div class="col-sm">
-
-</div>  
-
-  </div>
-</div>
-		&nbsp;    
 <div class="row">
 	 	
             <div class="col-md">
@@ -350,14 +347,6 @@ body {
               </div>
             </div>
 			
-			<div class="col-md">
-			<div class="btn-group" role="group" aria-label="Basic example">
-			  <button type="button" class="btn btn-success">Left</button>
-			  <button type="button" class="btn btn-success">Middle</button>
-			  <button type="button" class="btn btn-success">Right</button>
-			</div>
-			
-			</div>
 		
 &nbsp;
           </div>	
@@ -666,7 +655,11 @@ body {
 		 var data = $("#selectstyle option:selected").text();
 		var imgurl='flatui/img/style/'+data+'.png';
 
+	
+	$('.circled').find("img").stop(true,true).animate({opacity: 0}, 900);
 		$('#imgstyle').attr('src',imgurl);
+	$('.circled').find("img").stop(true,true).animate({opacity: 1}, 600);
+	
 });
 
 	var imgsize=0;
@@ -679,6 +672,7 @@ body {
 		imgsize=0;
 	}
 	
+	$('.circled').find("img").stop(true,true).animate({opacity: 0}, 900);
 
 	if(imgsize===1){
 		$('.circled img').css('height','385');
@@ -689,10 +683,23 @@ body {
 		$('.circled img').css('height','120');
 		$('.circled img').css('width','100');	
 	}
-	
+	$('.circled').find("img").stop(true,true).animate({opacity: 1}, 600);	
 	});
 	
 	
+	</script>
+	
+	
+	<script>
+	/*
+	$(".circled2").hover(function(){
+		$(this).find("img").stop(true,true).animate({opacity: 0}, 400);
+		}, 
+		function() {
+		$('#imgstyle').attr('src','flatui/img/style/AC.png');
+		$(this).find("img").stop(true,true).animate({opacity: 1}, 600);
+		});
+	*/
 	</script>
 
 
