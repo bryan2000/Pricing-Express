@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Quotation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Loading Bootstrap -->
+    <link href="flatui/css/vendor/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Loading Flat UI Pro -->
+    <link href="flatui/css/flat-ui.css" rel="stylesheet">
+
+ 	
+
+  </head>
+
+  
+  <style>
+  .tablepress-id-1 tbody td tr {
+	
+	font-size: 14px;
+
+	height: 10px;
+}
+
+
+.btn-xs {
+  padding: 6px;
+}
+
+.circled img {
+	cursor:pointer;
+	margin-top:10px;
+    display: inline-block;
+    border-radius: 50%;
+	height: 120px;
+	width: 100px;
+	
+	
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    overflow-y: auto;
+/*	font-size: 12px;
+	line-height: 1.72222;
+*/	
+
+ padding-top: 70px; /* padding for fixed navbar */
+}
+
+/* hidden spacer before sections for proper offset */
+
+
+
+#mainNav {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  font-weight: 700;
+  font-family: 'Montserrat';
+}
+
+#mainNav .navbar-brand {
+    font-size: 2em;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+  color: #18BC9C;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
+  color: #fff;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
+  color: #18BC9C;
+}
+
+#mainNav .navbar-toggler {
+  font-size: 80%;
+  padding: 0.1rem;
+
+}
+
+	.btn-status{
+  /*  font-size: 1.3em; */
+   padding:5px;
+ 
+   font-weight: bold;
+}
+
+  </style>
+ 
+<body data-spy="scroll" data-target="#navbarEZQUO" data-offset="70">
+   
+  	
+
+	        <nav class="navbar navbar-expand-md fixed-top navbar-default  " role="navigation" id="mainNav">
+			<div class="container">
+            <a class="navbar-brand" href="#">EZ-QUO</a>
+            <button type="button" class="navbar-toggler navbar-toggler-right " data-toggle="collapse" data-target="#navbarEZQUO">
+			
+            </button>
+			
+
+            <div class="collapse navbar-collapse" id="navbarEZQUO">
+              <ul class="nav navbar-nav mr-auto">
+			  
+		
+			    <li class="nav-item">
+					<a class="nav-link py-3 px-lg-3 rounded js-scroll-trigger" href="#item">Item </a>
+				</li>
+                <li class="nav-item">
+					<a class="nav-link py-3px-lg-3 rounded js-scroll-trigger" href="#bottom">Total</a>
+				</li>
+              
+             </ul>			
+			
+			  <button type="button" class="btn btn-default navbar-btn btn-status ">Wish List</button>&nbsp;
+			  <button type="button" class="btn btn-default navbar-btn btn-status">Save For Later</button>&nbsp;
+			  <button type="button" class="btn btn-default navbar-btn btn-status">Submit</button>&nbsp;
+			
+				
+         
+
+          </div><!-- /.navbar-collapse -->
+		  </div>
+        </nav><!-- /navbar -->
+		
+		<div class="container">
+		<div class="row">
+		<h1 class="display-1">Main Menu</h1>
+			</div>
+		</div>
+		<hr>
+		
+		<div class="container">
+		<div class="row">
+		<h1> ... Welcome to Quote ...</h1>
+		</div>
+		</div>
+		
+		<hr>
+		
+		<div class="container">
+		<div class="row">
+			<p>You can use the mark tag to <mark>highlight</mark> text.</p>
+			<p><del>This line of text is meant to be treated as deleted text.</del></p>
+			<p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+			<p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+			<p><u>This line of text will render as underlined</u></p>
+			<p><small>This line of text is meant to be treated as fine print.</small></p>
+			<p><strong>This line rendered as bold text.</strong></p>
+			<p><em>This line rendered as italicized text.</em></p>
+		</div>
+		</div>
+		
+		<hr>
+		
+		
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap 4 requires Popper.js -->
+    <script src="https://unpkg.com/popper.js@1.14.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+
+	
+    <script src="flatui/scripts/flat-ui.js"></script>
+	
+	<script src="flatui/scripts/application.js"></script>
+	
+
+
+
+	<script>
+	
+	  // Closes responsive menu when a scroll trigger link is clicked
+	  
+  $('.js-scroll-trigger').click(function() {
+    $('.navbar-collapse').collapse('hide');
+  });
+
+
+	  // Collapse Navbar
+  var navbarCollapse = function() {
+    if ($("#mainNav").offset().top > 100) {
+      $("#mainNav").addClass("navbar-shrink");
+    } else {
+      $("#mainNav").removeClass("navbar-shrink");
+    }
+  };
+	</script>
+	
+	
+	
+	<script>
+	//select2 change img
+
+	$('#selectstyle').on('select2-selected', function(e) { 
+
+		 var data = $("#selectstyle option:selected").text();
+		var imgurl='flatui/img/style/'+data+'.png';
+
+	
+	$('.circled').find("img").stop(true,true).animate({opacity: 0}, 900);
+		$('#imgstyle').attr('src',imgurl);
+	$('.circled').find("img").stop(true,true).animate({opacity: 1}, 600);
+	
+});
+
+	var imgsize=0;
+	$('#imgstyle').on('click',function(){
+
+	if(imgsize==0){
+		imgsize=1;
+	}
+	else{
+		imgsize=0;
+	}
+	
+	$('.circled').find("img").stop(true,true).animate({opacity: 0}, 900);
+
+	if(imgsize===1){
+		$('.circled img').css('height','385');
+		$('.circled img').css('width','256');
+			
+	}
+	else{
+		$('.circled img').css('height','120');
+		$('.circled img').css('width','100');	
+	}
+	$('.circled').find("img").stop(true,true).animate({opacity: 1}, 600);	
+	});
+	
+	
+	</script>
+	
+	
+	<script>
+	/*
+	$(".circled2").hover(function(){
+		$(this).find("img").stop(true,true).animate({opacity: 0}, 400);
+		}, 
+		function() {
+		$('#imgstyle').attr('src','flatui/img/style/AC.png');
+		$(this).find("img").stop(true,true).animate({opacity: 1}, 600);
+		});
+	*/
+	</script>
+
+
+  </body>
+</html>	
