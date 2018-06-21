@@ -99,7 +99,12 @@ table {
 
     border-spacing: 2px;
     border-color: grey;
+}
 
+.carouselband {
+  width:640px;
+  height:360px;
+}
 
   </style>
  
@@ -141,18 +146,54 @@ table {
         </nav><!-- /navbar -->
 		
 		<!-- Carousel   -->
+		
+		
+		
+		<header class="bg-light text-white text-center img-center">
 		<div class="container">
-		<div class="row">
-			Carousel
-		</div>
-		</div>
+			<div class="row">
+			<div class="col-lg-2">
+			&nbsp;
+			</div>
+			<div class="col-lg">
+
+			<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+			  <div class="carousel-inner ">
+				<div class="carousel-item active">
+				  <img class="d-block w-100 " src="flatui/img/portfolio/cabin.png" alt="First slide">
+				</div>
+				<div class="carousel-item">
+				  <img class="d-block w-100" src="flatui/img/portfolio/cake.png" alt="Second slide">
+				</div>
+				<div class="carousel-item">
+				  <img class="d-block w-100" src="flatui/img/portfolio/circus.png" alt="Third slide">
+				</div>
+				<div class="carousel-item">
+				  <img class="d-block w-100 " src="flatui/img/portfolio/game.png" alt="First slide">
+				</div>
+				<div class="carousel-item">
+				  <img class="d-block w-100" src="flatui/img/portfolio/safe.png" alt="Second slide">
+				</div>
+				<div class="carousel-item">
+				  <img class="d-block w-100" src="flatui/img/portfolio/submarine.png" alt="Third slide">
+				</div>				
+			  </div>
+			</div>
+			</div>
+			<div class="col-lg-2">
+			&nbsp;
+			</div>
+			</div>
+	
+		</header>
+		<br>
 		<!-- Carousel   -->		
 		
 		
 		<div class="container-fluid "><!-- Entire Width of the View Port -->
 		<div class="row "><!-- Entire Row -->
 		
-		  <div class="col-sm-3 border-right">
+		  <div class="col-sm-3 border-right border-left border-success">
 	
 			  <div class="input-group input-group-rounded input-group-sm">
 			    <input type="text" class="form-control " placeholder="Search" id="search-query-3">
@@ -195,18 +236,12 @@ table {
 				
 				
 				<button class="btn btn-primary ">
-				  <span class="fui-new"></span> 500
-				</button>
-				<button class="btn btn-social-linkedin">
-				  <span class="fui-linkedin"></span> 500
-				</button>
-				<button class="btn btn-social-stumbleupon">
-				  <span class="fui-stumbleupon"></span> 500
+				  <span class="fui-new"></span>New
 				</button>
 
 			<div class="btn-group">
 			  <button class="btn btn-inverse dropdown-toggle" type="button" data-toggle="dropdown">
-				Large button
+			  More...
 			  </button>
 			  <ul class="dropdown-menu dropdown-menu-inverse" role="menu">
 				<li><a href="#">Action</a></li>
