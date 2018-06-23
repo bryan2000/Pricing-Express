@@ -109,9 +109,8 @@ table {
     border-color: grey;
 }
 
-.carouselband {
-  width:640px;
-  height:360px;
+.figure {
+  margin-right:10px;
 }
 
   </style>
@@ -140,7 +139,8 @@ table {
 				</li>
 			
               
-             </ul>			
+             </ul>
+			 
 			
 			  <button type="button" class="btn btn-default navbar-btn btn-status ">Wish List</button>&nbsp;
 			  <button type="button" class="btn btn-default navbar-btn btn-status">Save For Later</button>&nbsp;
@@ -194,7 +194,7 @@ table {
 					</div>
 			  <!-- SEARCH BOX -------------->	
 				<div class="input-group">				
-                <label class="radio" for="radio3">
+				<label class="radio" for="radio3">
                   <input type="radio" name="optionsRadios1" value="" id="radio3" data-toggle="radio" checked="checked" >
                   All
                 </label> &nbsp;				
@@ -207,8 +207,11 @@ table {
                   Paper 
                 </label>
 
+			  <a href="#" class="btn btn-primary btn-xs"> Reset</span></a>
 			  
 				</div>
+				
+				
 				
 				<div class="cardtop mbl ">
 				
@@ -271,73 +274,67 @@ table {
 
 		
 		
-		
 				<div class="circled mbl">	
 
-					  <figure class="figure figure-light">
+					<figure class="figure figure-light">
 					  <img class="figure-img img-fluid imgstyle"  src= "flatui/img/icons/clipboard.svg"/>
 			
 					  <figcaption > 
-						<a href="#" class="btn btn-light "> 
-					  Job Site <span class="badge badge-dark">5</span>
+						<a href="#" class="btn btn-dark "> 
+					  Job Site  <span class="badge badge-light">5</span>
 					 	</a> 
 					  </figcaption>
-					  </figure>
-								  
-					  &nbsp;
-					  <figure class="figure ">
+					</figure>
+		
+					<figure class="figure ">
 					  <img class="figure-img img-fluid imgstyle"  src= "flatui/img/icons/clipboard.svg"/>	
 
 					  <figcaption >
-						 <a href="#" class="btn btn-light "> 			  
-					  Wish List<span class="badge badge-dark">8</span>
+						 <a href="#" class="btn btn-primary "> 			  
+					  Wish List&nbsp; <span class="badge badge-light">8</span>
 					 	</a>
 					  </figcaption>
-					  </figure>
+					</figure>
 				
-						&nbsp;
-				
-			<figure class="figure ">
-			  <img src="flatui/img/icons/clipboard.svg" class="figure-img img-fluid imgstyle " alt="A generic square placeholder image with rounded corners in a figure.">
+					<figure class="figure ">
+					  <img src="flatui/img/icons/clipboard.svg" class="figure-img img-fluid imgstyle " alt="A generic square placeholder image with rounded corners in a figure.">
 
-			  <figcaption >
-			  		 <a href="#" class="btn btn-light ">  
-			  Opening <span class="badge badge-dark">15</span>
-					  </a>
-			  </figcaption>
-			</figure>
+					  <figcaption >
+							 <a href="#" class="btn btn-dark ">  
+					  Opening &nbsp;<span class="badge badge-light">15</span>
+							  </a>
+					  </figcaption>
+					</figure>
 
-			&nbsp;
-			<figure class="figure ">
-			  <img src="flatui/img/icons/clipboard.svg" class="figure-img img-fluid imgstyle" alt="A generic square placeholder image with rounded corners in a figure.">
-				
-			  <figcaption >
-			  	<a href="#" class="btn btn-light "> 	  
-			  Processing <span class="badge badge-dark">23</span>
-				</a>		  
-			  </figcaption>
-			</figure>	
+					<figure class="figure ">
+					  <img src="flatui/img/icons/clipboard.svg" class="figure-img img-fluid imgstyle" alt="A generic square placeholder image with rounded corners in a figure.">
+						
+					  <figcaption >
+						<a href="#" class="btn btn-primary "> 	  
+					  Processing  <span class="badge badge-light">23</span>
+						</a>		  
+					  </figcaption>
+					</figure>	
 
-			&nbsp;
-			<figure class="figure ">
-			  <img src="flatui/img/icons/clipboard.svg" class="figure-img img-fluid imgstyle" alt="A generic square placeholder image with rounded corners in a figure.">
-			  <figcaption >
-				<a href="#" class="btn btn-light "> 			  
-			  Back Order <span class="badge badge-dark">2</span>
-				</a>	  
-			  </figcaption>
-			</figure>
+					
+					<figure class="figure ">
+					  <img src="flatui/img/icons/clipboard.svg" class="figure-img img-fluid imgstyle" alt="A generic square placeholder image with rounded corners in a figure.">
+					  <figcaption >
+						<a href="#" class="btn btn-dark "> 			  
+					  Back Order  <span class="badge badge-light">2</span>
+						</a>	  
+					  </figcaption>
+					</figure>
 
-			&nbsp;
-			<figure class="figure ">
-			  <img src="flatui/img/icons/clipboard.svg" class="figure-img img-fluid imgstyle" alt="A generic square placeholder image with rounded corners in a figure.">
+					<figure class="figure ">
+					  <img src="flatui/img/icons/clipboard.svg" class="figure-img img-fluid imgstyle" alt="A generic square placeholder image with rounded corners in a figure.">
 
-			  <figcaption >
-				  	<a href="#" class="btn btn-light "> 	  
-			  R.M.A <span class="badge badge-dark">1</span>
-			  	</a>
-				</figcaption>
-			</figure>		
+					  <figcaption >
+							<a href="#" class="btn btn-primary "> 	  
+					  R.M.A  <span class="badge badge-light">1</span>
+						</a>
+						</figcaption>
+					</figure>		
 		
 		
 	
@@ -353,11 +350,12 @@ table {
 				  
 			  
           <select id="select2" multiple="multiple" class="form-control multiselect multiselect-primary mbl " data-toggle="select">
-            <option value="0">Number</option>
+            <option value="0" selected>QUO#</option>
             <option value="1" selected>Vendor</option>
             <option value="2" selected>Style</option>
             <option value="3" selected>Amount</option>
-            <option value="4">KD</option>
+            <option value="4" selected>PO</option>
+            <option value="5">KD</option>			
           </select>
 					  		
 			  <!-- Search Details Box ------->
@@ -389,7 +387,9 @@ table {
 			  
                 </div>
  			  <!-- Search Details Box ------->  
- 
+ 		<div class="alert alert-success" role="alert">
+			This is a success alert—check it out!
+		</div>
 			  
 			 	<!-- btn toolbar -->
 		<div class="table-responsive">
@@ -416,7 +416,7 @@ table {
 					  <button class="btn btn-xs btn-dark " type="button" data-toggle="dropdown">
 						<span class="fui-list-bulleted"></span>
 					  </button>
-					  <ul class="dropdown-menu " role="menu">
+					  <ul class="dropdown-menu dropdown-menu-inverse" role="menu">
 						<li><a href="#">Modify</a></li>
 						<li><a href="#">Remove</a></li>
 						<li><a href="#">Something else here</a></li>
@@ -441,7 +441,7 @@ table {
 					  <button class="btn btn-xs btn-dark " type="button" data-toggle="dropdown">
 						<span class="fui-list-bulleted"></span>
 					  </button>
-					  <ul class="dropdown-menu " role="menu">
+					  <ul class="dropdown-menu dropdown-menu-inverse" role="menu">
 						<li><a href="#">Modify</a></li>
 						<li><a href="#">Remove</a></li>
 						<li><a href="#">Something else here</a></li>
@@ -466,7 +466,7 @@ table {
 					  <button class="btn btn-xs btn-dark " type="button" data-toggle="dropdown">
 						<span class="fui-list-bulleted"></span>
 					  </button>
-					  <ul class="dropdown-menu " role="menu">
+					  <ul class="dropdown-menu dropdown-menu-inverse" role="menu">
 						<li><a href="#">Modify</a></li>
 						<li><a href="#">Remove</a></li>
 						<li><a href="#">Something else here</a></li>
@@ -491,7 +491,7 @@ table {
 					  <button class="btn btn-xs btn-dark " type="button" data-toggle="dropdown">
 						<span class="fui-list-bulleted"></span>
 					  </button>
-					  <ul class="dropdown-menu " role="menu">
+					  <ul class="dropdown-menu dropdown-menu-inverse" role="menu">
 						<li><a href="#">Modify</a></li>
 						<li><a href="#">Remove</a></li>
 						<li><a href="#">Something else here</a></li>
@@ -516,7 +516,7 @@ table {
 					  <button class="btn btn-xs btn-dark " type="button" data-toggle="dropdown">
 						<span class="fui-list-bulleted"></span>
 					  </button>
-					  <ul class="dropdown-menu " role="menu">
+					  <ul class="dropdown-menu dropdown-menu-inverse" role="menu">
 						<li><a href="#">Modify</a></li>
 						<li><a href="#">Remove</a></li>
 						<li><a href="#">Something else here</a></li>
