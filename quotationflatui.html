@@ -148,7 +148,7 @@
 
  div.divdetails {
        
-        height: 210px;
+        height: 310px;
         overflow: scroll;
     }
 </style>
@@ -159,31 +159,32 @@
     <nav class="navbar navbar-expand-md fixed-top navbar-inverse " id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="#">EZ-QUO</a>
+
             <button type="button" class="navbar-toggler navbar-toggler-right " data-toggle="collapse" data-target="#navbarEZQUO"></button>
 
-            <div class="collapse navbar-collapse" id="navbarEZQUO">
-                <ul class="nav navbar-nav mr-auto">
+                <div class="collapse navbar-collapse" id="navbarEZQUO">
+                    <ul class="nav navbar-nav mr-auto">
 
 
-                    <li class="nav-item">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#itemdetail">Item Enter</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#bottom">Total</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#item">Item Enter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#summary">Summary</a>
+                        </li>
 
-                </ul>
+                    </ul>
 
-                <button type="button" class="btn btn-default navbar-btn btn-status ">Wish List</button>&nbsp;
-                <button type="button" class="btn btn-default navbar-btn btn-status">Save For Later</button>&nbsp;
-                <button type="button" class="btn btn-default navbar-btn btn-status">Submit</button>&nbsp;
-
-
+                    <button type="button" class="btn btn-default navbar-btn btn-status ">Wish List</button>&nbsp;
+                    <button type="button" class="btn btn-default navbar-btn btn-status">Save For Later</button>&nbsp;
+                    <button type="button" class="btn btn-default navbar-btn btn-status">Submit</button>&nbsp;
 
 
-            </div><!-- /.navbar-collapse -->
-        </div>
-    </nav><!-- /navbar -->
+
+
+                </div><!-- /.navbar-collapse -->
+            </div>
+</nav><!-- /navbar -->
 
 
     <main class="container">
@@ -240,462 +241,459 @@
                     </div>
                 </div>
                 <br>
-                </div>
+            </div>
         </section> <!-- header -->
 
 
-
-
-        <div class="container ">
-            <div class="row">
-                <div class="col-sm po ">
-                    <div class="form-group ">
-                        <input type="text" class="form-control " placeholder="PO Number" />
-                        <span class="form-control-feedback fui-check"></span>
-                    </div>
-                </div>
-
-                <div class="col-sm shipdate float-left">
-                    <div class="input-group input-group-sm">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">Ship Date</span>
-                        </div>
-                        <input type="date" class="form-control input-md" id="shipdate">
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <div class="container" >
-
-            <div class="row">
-                <div class="col-sm circled">
-                    <img id="imgstyle" src="flatui/img/style/lo.png" />
-                </div>
-
-
-
-                <div class="col-sm" id="itemdetail">
-                    &nbsp;
-                </div>
-            </div>
-
-            <div class="row" >
-                <div class="col-sm ">
-                    <div class="input-group ">
-                        <select id="selectstyle" class="form-control select select-primary mbl" data-toggle="select">
-                            <optgroup label="Style">
-                                <option value="0">LO</option>
-                                <option value="1">OC</option>
-                                <option value="2">MW</option>
-                                <option value="3">SN</option>
-                                <option value="4">AC</option>
-                                <option value="5">CB</option>
-                                <option value="6">CSG</option>
-                                <option value="7">MA</option>
-
-                            </optgroup>
-                        </select>
-
-                        &nbsp;
-
-
-                    </div>
-
-                </div>
-
-                <div class="col-sm float-left ">
-                    <div class="input-group input-group-sm">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">Date</span>
-                        </div>
-                        <input type="date" class="form-control input-md" id="qodate">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md">
-                &nbsp;
-            </div>
-
-        </div>
-
-        <div class="row">
-
-            <div class="col-md">
-                <div class="form-group">
-                    <div class="input-group input-group-rounded">
-                        <span class="input-group-btn">
-                            <button type="submit" class="btn" onclick="itementer();"><span class="fui-search"></span></button>
-                        </span>
-                        <input type="text" class="form-control" placeholder="Item" id="search-query-2">
-                        <span class="input-group-btn">
-                            &nbsp;&nbsp;
-                            <input type="checkbox" checked data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd" />
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-
-            &nbsp;
-        </div>
-
         <section id="item">
-            <div class="container">
-                <div class="row divdetails" id="divdetails">
-                    <table class="table table-sm table-hover ">
-                        <thead class="thead-light">
-                            <tr>
-                                <th scope="col">Quantity</th>
-                                <th scope="col">Style</th>
-                                <th scope="col">ITEM</th>
-                                <th scope="col">L/R</th>
-                                <th scope="col">KD</th>
-                                <th scope="col"></th>
-                                <th scope="col">Price</th>
-                                <th scope="col">Amount</th>
-                                <th scope="col">Stock</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
 
-                                <td>
+            <div class="container ">
+                <div class="row">
+                    <div class="col-sm po ">
+                        <div class="form-group ">
+                            <input type="text" class="form-control " placeholder="PO Number" />
+                            <span class="form-control-feedback fui-check"></span>
+                        </div>
+                    </div>
 
-                                    <div class="input-group input-group-rounded float-left">
+                    <div class="col-sm shipdate float-left">
+                        <div class="input-group input-group-sm">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Ship Date</span>
+                            </div>
+                            <input type="date" class="form-control input-md" id="shipdate">
+                        </div>
+                    </div>
 
-                                        <input type="number" max="99" min="1" class="form-control flat font-weight-bold input-sm" value="2" />
-
-                                    </div>
-                                </td>
-                                <td>LO</td>
-                                <td><b data-toggle="tooltip" title="L.O Base"> B18 </b></td>
-                                <td><input type="checkbox" data-on-text="Left" data-off-text="Right" data-off-color="success" checked data-toggle="switch" name="square-switch" id="switch-02" /></td>
-                                <td><input type="checkbox" checked data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd" /> </td>
-                                <td>
-                                    <div class="btn-group">
-                                        <button class="btn btn-xs btn-default dropdown-toggle" type="button" data-toggle="dropdown">
-                                            Action
-                                        </button>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">Modify</a></li>
-                                            <li><a href="#">Remove</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li class="divider"></li>
-                                            <li><a href="#">Separated link</a></li>
-                                        </ul>
-                                    </div>
-                                </td>
-                                <td>56.00</td>
-                                <td>112.00</td>
-                                <td><b class="text-success">InStock</b></td>
-                            </tr>
-                            <tr>
-                                <td>
-
-                                    <div class="input-group input-group-rounded">
-                                        <input type="number" max="99" min="1" class="form-control flat font-weight-bold input-sm" value="2" />
-                                    </div>
-
-                                </td>
-                                <td>LO</td>
-                                <td><b data-toggle="tooltip" title="L.O Base">W1830</b></td>
-                                <td><input class="input-sm" type="checkbox" data-on-text="Left" data-off-text="Right" data-off-color="success" checked data-toggle="switch" name="square-switch" id="switch-02" /></td>
-                                <td><input class="input-sm" type="checkbox" checked data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd" /> </td>
-                                <td>
-                                    <div class="btn-group">
-                                        <button class="btn btn-xs btn-default dropdown-toggle" type="button" data-toggle="dropdown">
-                                            Action
-                                        </button>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">Modify</a></li>
-                                            <li><a href="#">Remove</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li class="divider"></li>
-                                            <li><a href="#">Separated link</a></li>
-                                        </ul>
-                                    </div>
-                                </td>
-                                <td>48.00</td>
-                                <td>96.00</td>
-                                <td><b class="text-success"> InStock</b></td>
-                            </tr>
-                            <tr>
-
-                                <td>
-
-                                    <div class="input-group input-group-rounded">
-                                        <input type="number" max="99" min="1" class="form-control flat font-weight-bold input-sm" value="1" />
-                                    </div>
-
-                                </td>
-                                <td>LO</td>
-                                <td><b data-toggle="tooltip" title="L.O Sink Base No Drawer on Top">SB36 </b></td>
-                                <td></td>
-                                <td><input type="checkbox" data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd" /> </td>
-                                <td>
-                                    <div class="btn-group">
-                                        <button class="btn btn-xs btn-default dropdown-toggle" type="button" data-toggle="dropdown">
-                                            Action
-                                        </button>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">Modify</a></li>
-                                            <li><a href="#">Remove</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li class="divider"></li>
-                                            <li><a href="#">Separated link</a></li>
-                                        </ul>
-                                    </div>
-                                </td>
-                                <td>80.00</td>
-                                <td>80.00</td>
-                                <td><b class="text-warning">Low</b></td>
-                            </tr>
-                            <tr>
-
-                                <td>
-
-                                    <div class="input-group input-group-rounded">
-                                        <input type="number" max="99" min="1" class="form-control flat font-weight-bold input-sm" value="2" />
-                                    </div>
-
-                                </td>
-                                <td>LO</td>
-                                <td><b data-toggle="tooltip" title="L.O Base Filler">BF3 </b></td>
-                                <td></td>
-                                <td><input type="checkbox" data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd" /> </td>
-                                <td>
-                                    <div class="btn-group">
-                                        <button class="btn btn-xs btn-default dropdown-toggle" type="button" data-toggle="dropdown">
-                                            Action
-                                        </button>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">Modify</a></li>
-                                            <li><a href="#">Remove</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li class="divider"></li>
-                                            <li><a href="#">Separated link</a></li>
-                                        </ul>
-                                    </div>
-                                </td>
-                                <td>8.00</td>
-                                <td>16.00</td>
-                                <td><b class="text-danger">Out</b></td>
-                            </tr>
-
-                            <tr>
-
-                                <td>
-
-                                    <div class="input-group input-group-rounded">
-                                        <input type="number" max="99" min="1" class="form-control flat font-weight-bold input-sm" value="1" />
-                                    </div>
-
-                                </td>
-                                <td>LO</td>
-                                <td><b data-toggle="tooltip" title="L.O Base Filler">RBCB3327 </b></td>
-                                <td><input class="input-sm" type="checkbox" data-on-text="Left" data-off-text="Right" data-off-color="success" data-toggle="switch" name="square-switch" id="switch-02" /></td>
-                                <td><input type="checkbox" data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd" /> </td>
-                                <td>
-                                    <div class="btn-group">
-                                        <button class="btn btn-xs btn-default dropdown-toggle" type="button" data-toggle="dropdown">
-                                            Action
-                                        </button>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">Modify</a></li>
-                                            <li><a href="#">Remove</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li class="divider"></li>
-                                            <li><a href="#">Separated link</a></li>
-                                        </ul>
-                                    </div>
-                                </td>
-                                <td>128.00</td>
-                                <td>128.00</td>
-                                <td><b class="text-warning">Low</b></td>
-                            </tr>
-                            <!--     Second 2        -->
-                            <tr>
-
-                                <td>
-
-                                    <div class="input-group input-group-rounded float-left">
-
-                                        <input type="number" max="99" min="1" class="form-control flat font-weight-bold input-sm" value="2" />
-
-                                    </div>
-                                </td>
-                                <td>LO</td>
-                                <td><b data-toggle="tooltip" title="L.O Base"> B18 </b></td>
-                                <td><input type="checkbox" data-on-text="Left" data-off-text="Right" data-off-color="success" checked data-toggle="switch" name="square-switch" id="switch-02" /></td>
-                                <td><input type="checkbox" checked data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd" /> </td>
-                                <td>
-                                    <div class="btn-group">
-                                        <button class="btn btn-xs btn-default dropdown-toggle" type="button" data-toggle="dropdown">
-                                            Action
-                                        </button>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">Modify</a></li>
-                                            <li><a href="#">Remove</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li class="divider"></li>
-                                            <li><a href="#">Separated link</a></li>
-                                        </ul>
-                                    </div>
-                                </td>
-                                <td>56.00</td>
-                                <td>112.00</td>
-                                <td><b class="text-success">InStock</b></td>
-                            </tr>
-                            <tr>
-                                <td>
-
-                                    <div class="input-group input-group-rounded">
-                                        <input type="number" max="99" min="1" class="form-control flat font-weight-bold input-sm" value="2" />
-                                    </div>
-
-                                </td>
-                                <td>LO</td>
-                                <td><b data-toggle="tooltip" title="L.O Base">W1830</b></td>
-                                <td><input class="input-sm" type="checkbox" data-on-text="Left" data-off-text="Right" data-off-color="success" checked data-toggle="switch" name="square-switch" id="switch-02" /></td>
-                                <td><input class="input-sm" type="checkbox" checked data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd" /> </td>
-                                <td>
-                                    <div class="btn-group">
-                                        <button class="btn btn-xs btn-default dropdown-toggle" type="button" data-toggle="dropdown">
-                                            Action
-                                        </button>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">Modify</a></li>
-                                            <li><a href="#">Remove</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li class="divider"></li>
-                                            <li><a href="#">Separated link</a></li>
-                                        </ul>
-                                    </div>
-                                </td>
-                                <td>48.00</td>
-                                <td>96.00</td>
-                                <td><b class="text-success"> InStock</b></td>
-                            </tr>
-                            <tr>
-
-                                <td>
-
-                                    <div class="input-group input-group-rounded">
-                                        <input type="number" max="99" min="1" class="form-control flat font-weight-bold input-sm" value="1" />
-                                    </div>
-
-                                </td>
-                                <td>LO</td>
-                                <td><b data-toggle="tooltip" title="L.O Sink Base No Drawer on Top">SB36 </b></td>
-                                <td></td>
-                                <td><input type="checkbox" data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd" /> </td>
-                                <td>
-                                    <div class="btn-group">
-                                        <button class="btn btn-xs btn-default dropdown-toggle" type="button" data-toggle="dropdown">
-                                            Action
-                                        </button>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">Modify</a></li>
-                                            <li><a href="#">Remove</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li class="divider"></li>
-                                            <li><a href="#">Separated link</a></li>
-                                        </ul>
-                                    </div>
-                                </td>
-                                <td>80.00</td>
-                                <td>80.00</td>
-                                <td><b class="text-warning">Low</b></td>
-                            </tr>
-                            <tr>
-
-                                <td>
-
-                                    <div class="input-group input-group-rounded">
-                                        <input type="number" max="99" min="1" class="form-control flat font-weight-bold input-sm" value="2" />
-                                    </div>
-
-                                </td>
-                                <td>LO</td>
-                                <td><b data-toggle="tooltip" title="L.O Base Filler">BF3 </b></td>
-                                <td></td>
-                                <td><input type="checkbox" data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd" /> </td>
-                                <td>
-                                    <div class="btn-group">
-                                        <button class="btn btn-xs btn-default dropdown-toggle" type="button" data-toggle="dropdown">
-                                            Action
-                                        </button>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">Modify</a></li>
-                                            <li><a href="#">Remove</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li class="divider"></li>
-                                            <li><a href="#">Separated link</a></li>
-                                        </ul>
-                                    </div>
-                                </td>
-                                <td>8.00</td>
-                                <td>16.00</td>
-                                <td><b class="text-danger">Out</b></td>
-                            </tr>
-
-                            <tr>
-
-                                <td>
-
-                                    <div class="input-group input-group-rounded">
-                                        <input type="number" max="99" min="1" class="form-control flat font-weight-bold input-sm" value="1" />
-                                    </div>
-
-                                </td>
-                                <td>LO</td>
-                                <td><b data-toggle="tooltip" title="L.O Base Filler">RBCB3327 </b></td>
-                                <td><input class="input-sm" type="checkbox" data-on-text="Left" data-off-text="Right" data-off-color="success" data-toggle="switch" name="square-switch" id="switch-02" /></td>
-                                <td><input type="checkbox" data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd" /> </td>
-                                <td>
-                                    <div class="btn-group">
-                                        <button class="btn btn-xs btn-default dropdown-toggle" type="button" data-toggle="dropdown">
-                                            Action
-                                        </button>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">Modify</a></li>
-                                            <li><a href="#">Remove</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li class="divider"></li>
-                                            <li><a href="#">Separated link</a></li>
-                                        </ul>
-                                    </div>
-                                </td>
-                                <td>128.00</td>
-                                <td>128.00</td>
-                                <td><b class="text-warning">Low</b></td>
-                            </tr>
-
-                            <tr class="table-active" id="bottom">
-                                <th></th>
-                                <td colspan="1">&nbsp;</td>
-                                <td colspan="100%">Subtotal: 432.00</td>
-                            </tr>
-                        </tbody>
-                    </table>
                 </div>
 
+            </div>
 
-            </div>  <!-- Body -->
 
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-sm circled">
+                        <img id="imgstyle" src="flatui/img/style/lo.png" />
+                    </div>
+
+
+
+                    <div class="col-sm">
+                        &nbsp;
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm ">
+                        <div class="input-group ">
+                            <select id="selectstyle" class="form-control select select-primary mbl" data-toggle="select">
+                                <optgroup label="Style">
+                                    <option value="0">LO</option>
+                                    <option value="1">OC</option>
+                                    <option value="2">MW</option>
+                                    <option value="3">SN</option>
+                                    <option value="4">AC</option>
+                                    <option value="5">CB</option>
+                                    <option value="6">CSG</option>
+                                    <option value="7">MA</option>
+
+                                </optgroup>
+                            </select>
+
+                            &nbsp;
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm float-left ">
+                        <div class="input-group input-group-sm">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Date</span>
+                            </div>
+                            <input type="date" class="form-control input-md" id="qodate">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        &nbsp;
+            <div class="row">
+
+                <div class="col-md">
+                    <div class="form-group">
+                        <div class="input-group input-group-rounded">
+                            <span class="input-group-btn">
+                                <button type="submit" class="btn" onclick="itementer();"><span class="fui-search"></span></button>
+                            </span>
+                            <input type="text" class="form-control" placeholder="Item" id="search-query-2">
+                            <span class="input-group-btn">
+                                &nbsp;&nbsp;
+                                <input type="checkbox" checked data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd" />
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section> <!-- Item -->
 
-        <section >
+        <section id="summary">
+
+        <div class="container" >
+            <div class="row divdetails" id="divdetails">
+                <table class="table table-sm table-hover ">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Style</th>
+                            <th scope="col">ITEM</th>
+                            <th scope="col">L/R</th>
+                            <th scope="col">KD</th>
+                            <th scope="col"></th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Amount</th>
+                            <th scope="col">Stock</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+
+                            <td>
+
+                                <div class="input-group input-group-rounded float-left">
+
+                                    <input type="number" max="99" min="1" class="form-control flat font-weight-bold input-sm" value="2" />
+
+                                </div>
+                            </td>
+                            <td>LO</td>
+                            <td><b data-toggle="tooltip" title="L.O Base"> B18 </b></td>
+                            <td><input type="checkbox" data-on-text="Left" data-off-text="Right" data-off-color="success" checked data-toggle="switch" name="square-switch" id="switch-02" /></td>
+                            <td><input type="checkbox" checked data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd" /> </td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn btn-xs btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                        Action
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Modify</a></li>
+                                        <li><a href="#">Remove</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>56.00</td>
+                            <td>112.00</td>
+                            <td><b class="text-success">InStock</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                <div class="input-group input-group-rounded">
+                                    <input type="number" max="99" min="1" class="form-control flat font-weight-bold input-sm" value="2" />
+                                </div>
+
+                            </td>
+                            <td>LO</td>
+                            <td><b data-toggle="tooltip" title="L.O Base">W1830</b></td>
+                            <td><input class="input-sm" type="checkbox" data-on-text="Left" data-off-text="Right" data-off-color="success" checked data-toggle="switch" name="square-switch" id="switch-02" /></td>
+                            <td><input class="input-sm" type="checkbox" checked data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd" /> </td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn btn-xs btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                        Action
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Modify</a></li>
+                                        <li><a href="#">Remove</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>48.00</td>
+                            <td>96.00</td>
+                            <td><b class="text-success"> InStock</b></td>
+                        </tr>
+                        <tr>
+
+                            <td>
+
+                                <div class="input-group input-group-rounded">
+                                    <input type="number" max="99" min="1" class="form-control flat font-weight-bold input-sm" value="1" />
+                                </div>
+
+                            </td>
+                            <td>LO</td>
+                            <td><b data-toggle="tooltip" title="L.O Sink Base No Drawer on Top">SB36 </b></td>
+                            <td></td>
+                            <td><input type="checkbox" data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd" /> </td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn btn-xs btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                        Action
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Modify</a></li>
+                                        <li><a href="#">Remove</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>80.00</td>
+                            <td>80.00</td>
+                            <td><b class="text-warning">Low</b></td>
+                        </tr>
+                        <tr>
+
+                            <td>
+
+                                <div class="input-group input-group-rounded">
+                                    <input type="number" max="99" min="1" class="form-control flat font-weight-bold input-sm" value="2" />
+                                </div>
+
+                            </td>
+                            <td>LO</td>
+                            <td><b data-toggle="tooltip" title="L.O Base Filler">BF3 </b></td>
+                            <td></td>
+                            <td><input type="checkbox" data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd" /> </td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn btn-xs btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                        Action
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Modify</a></li>
+                                        <li><a href="#">Remove</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>8.00</td>
+                            <td>16.00</td>
+                            <td><b class="text-danger">Out</b></td>
+                        </tr>
+
+                        <tr>
+
+                            <td>
+
+                                <div class="input-group input-group-rounded">
+                                    <input type="number" max="99" min="1" class="form-control flat font-weight-bold input-sm" value="1" />
+                                </div>
+
+                            </td>
+                            <td>LO</td>
+                            <td><b data-toggle="tooltip" title="L.O Base Filler">RBCB3327 </b></td>
+                            <td><input class="input-sm" type="checkbox" data-on-text="Left" data-off-text="Right" data-off-color="success" data-toggle="switch" name="square-switch" id="switch-02" /></td>
+                            <td><input type="checkbox" data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd" /> </td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn btn-xs btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                        Action
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Modify</a></li>
+                                        <li><a href="#">Remove</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>128.00</td>
+                            <td>128.00</td>
+                            <td><b class="text-warning">Low</b></td>
+                        </tr>
+                        <!--     Second 2        -->
+                        <tr>
+
+                            <td>
+
+                                <div class="input-group input-group-rounded float-left">
+
+                                    <input type="number" max="99" min="1" class="form-control flat font-weight-bold input-sm" value="2" />
+
+                                </div>
+                            </td>
+                            <td>LO</td>
+                            <td><b data-toggle="tooltip" title="L.O Base"> B18 </b></td>
+                            <td><input type="checkbox" data-on-text="Left" data-off-text="Right" data-off-color="success" checked data-toggle="switch" name="square-switch" id="switch-02" /></td>
+                            <td><input type="checkbox" checked data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd" /> </td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn btn-xs btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                        Action
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Modify</a></li>
+                                        <li><a href="#">Remove</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>56.00</td>
+                            <td>112.00</td>
+                            <td><b class="text-success">InStock</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                <div class="input-group input-group-rounded">
+                                    <input type="number" max="99" min="1" class="form-control flat font-weight-bold input-sm" value="2" />
+                                </div>
+
+                            </td>
+                            <td>LO</td>
+                            <td><b data-toggle="tooltip" title="L.O Base">W1830</b></td>
+                            <td><input class="input-sm" type="checkbox" data-on-text="Left" data-off-text="Right" data-off-color="success" checked data-toggle="switch" name="square-switch" id="switch-02" /></td>
+                            <td><input class="input-sm" type="checkbox" checked data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd" /> </td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn btn-xs btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                        Action
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Modify</a></li>
+                                        <li><a href="#">Remove</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>48.00</td>
+                            <td>96.00</td>
+                            <td><b class="text-success"> InStock</b></td>
+                        </tr>
+                        <tr>
+
+                            <td>
+
+                                <div class="input-group input-group-rounded">
+                                    <input type="number" max="99" min="1" class="form-control flat font-weight-bold input-sm" value="1" />
+                                </div>
+
+                            </td>
+                            <td>LO</td>
+                            <td><b data-toggle="tooltip" title="L.O Sink Base No Drawer on Top">SB36 </b></td>
+                            <td></td>
+                            <td><input type="checkbox" data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd" /> </td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn btn-xs btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                        Action
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Modify</a></li>
+                                        <li><a href="#">Remove</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>80.00</td>
+                            <td>80.00</td>
+                            <td><b class="text-warning">Low</b></td>
+                        </tr>
+                        <tr>
+
+                            <td>
+
+                                <div class="input-group input-group-rounded">
+                                    <input type="number" max="99" min="1" class="form-control flat font-weight-bold input-sm" value="2" />
+                                </div>
+
+                            </td>
+                            <td>LO</td>
+                            <td><b data-toggle="tooltip" title="L.O Base Filler">BF3 </b></td>
+                            <td></td>
+                            <td><input type="checkbox" data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd" /> </td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn btn-xs btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                        Action
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Modify</a></li>
+                                        <li><a href="#">Remove</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>8.00</td>
+                            <td>16.00</td>
+                            <td><b class="text-danger">Out</b></td>
+                        </tr>
+
+                        <tr>
+
+                            <td>
+
+                                <div class="input-group input-group-rounded">
+                                    <input type="number" max="99" min="1" class="form-control flat font-weight-bold input-sm" value="1" />
+                                </div>
+
+                            </td>
+                            <td>LO</td>
+                            <td><b data-toggle="tooltip" title="L.O Base Filler">RBCB3327 </b></td>
+                            <td><input class="input-sm" type="checkbox" data-on-text="Left" data-off-text="Right" data-off-color="success" data-toggle="switch" name="square-switch" id="switch-02" /></td>
+                            <td><input type="checkbox" data-on-text="ASSM" data-off-text="KD" data-toggle="switch" name="info-switch-colors" data-on-color="info" id="switch-kd" /> </td>
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn btn-xs btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                        Action
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Modify</a></li>
+                                        <li><a href="#">Remove</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>128.00</td>
+                            <td>128.00</td>
+                            <td><b class="text-warning">Low</b></td>
+                        </tr>
+
+                        <tr class="table-active" id="bottom">
+                            <th></th>
+                            <td colspan="1">&nbsp;</td>
+                            <td colspan="100%">Subtotal: 432.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>  <!-- Body -->
+        
+        </section>
+
+
+        <section id="bottom">
             <div class="container">
                 <div class="row">
                     <div class="col-md border ">
                         <div class="row">
                             <div class="col-8 col-sm-6 text-right">
-                                Summary :
+                                Total Qty :
                             </div>
                             <div class="col-4 col-sm-4 ">
                                 <b>8</b>
@@ -761,8 +759,8 @@
                 <div class="col-md-4 mb-5 mb-lg-0">
                     <h4 class="text-uppercase mb-4">Location</h4>
                     <p class="lead mb-0">
-                        2215 John Daniel Drive
-                        <br>Clark, MO 65243
+                        241 59th Street
+                        <br>Brooklyn, NY 11204
                     </p>
                 </div>
                 <div class="col-md-4 mb-5 mb-lg-0">
@@ -770,35 +768,35 @@
                     <ul class="list-inline mb-0">
                         <li class="list-inline-item">
                             <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                                <i class="fa fa-fw fa-facebook"></i>
+                                <i class="fa fa-fw fui-facebook"></i>
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                                <i class="fa fa-fw fa-google-plus"></i>
+                                <i class=" fui-google-plus"></i>
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                                <i class="fa fa-fw fa-twitter"></i>
+                                <i class="fa fa-fw fui-twitter"></i>
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                                <i class="fa fa-fw fa-linkedin"></i>
+                                <i class="fa fa-fw fui-linkedin"></i>
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                                <i class="fa fa-fw fa-dribbble"></i>
+                                <i class="fa fa-fw fui-dribbble"></i>
                             </a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-4">
-                    <h4 class="text-uppercase mb-4">About Freelancer</h4>
+                    <h4 class="text-uppercase mb-4">About EZ-QUO</h4>
                     <p class="lead mb-0">
-                        Freelance is a free to use, open source Bootstrap theme created by
+                        EZ-QUO is a CRM to help cusomer to out put a quotation
                       
                     </p>
                 </div>
@@ -807,7 +805,7 @@
     </footer>
     <div class="copyright py-4 text-center text-white">
         <div class="container">
-            <small>Copyright &copy; Your Website 2018</small>
+            <small>Copyright &copy; EZ-QUO 2018</small>
         </div>
     </div>
 
