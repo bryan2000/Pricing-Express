@@ -1,707 +1,819 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Quotation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
     <!-- Loading Bootstrap -->
     <link href="flatui/css/vendor/bootstrap.min.css" rel="stylesheet">
-
     <!-- Loading Flat UI Pro -->
     <link href="flatui/css/flat-ui.css" rel="stylesheet">
 
- 	
+</head>
 
-  </head>
+<style>
 
-  
-  <style>
-  .tablepress-id-1 tbody td tr {
-	
-	font-size: 14px;
-
-	height: 10px;
-}
+    .tablepress-id-1 tbody td tr {
+        font-size: 14px;
+        height: 10px;
+    }
 
 
-.btn-xs {
-  padding: 6px;
-}
+    .btn-xs {
+        padding: 6px;
+    }
 
-.circled img {
-	cursor:pointer;
-	margin-top:10px;
-    display: inline-block;
-    border-radius: 50%;
-	height: 80px;
-	width: 80px;
-	
-	
-}
+    .circled img {
+        cursor: pointer;
+        margin-top: 10px;
+        display: inline-block;
+        border-radius: 50%;
+        height: 80px;
+        width: 80px;
+    }
 
-.cardtop img{
-	cursor:pointer;
-    border-radius: 10px;
-	height: 85px;
-	width: 85px;
-	
-}
+    .cardtop img {
+        cursor: pointer;
+        border-radius: 10px;
+        height: 85px;
+        width: 85px;
+    }
+    .modalstyle img {
+        cursor: pointer;
+        border-radius: 10px;
+        height: 203px;
+        width: 160px;
+    }
 
+    html {
+        scroll-behavior: smooth;
+    }
 
-html {
-    scroll-behavior: smooth;
-}
+    body {
+        position: relative;
+        overflow-y: auto;
+        line-height: 1.32222;
+        padding-top: 70px; /* padding for fixed navbar */
+    }
 
-body {
-    position: relative;
-    overflow-y: auto;
-	line-height: 1.32222;
-	
- padding-top: 70px; /* padding for fixed navbar */
-}
-
-/* hidden spacer before sections for proper offset */
+    /* hidden spacer before sections for proper offset */
 
 
 
-#mainNav {
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
-  font-weight: 700;
-  font-family: 'Montserrat';
-}
+    #mainNav {
+        padding-top: 0.1rem;
+        padding-bottom: 0.1rem;
+        font-weight: 700;
+        font-family: 'Montserrat';
+    }
 
-#mainNav .navbar-brand {
-    font-size: 2em;
-}
+        #mainNav .navbar-brand {
+            font-size: 2em;
+        }
 
-#mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #18BC9C;
-}
+        #mainNav .navbar-nav li.nav-item a.nav-link:hover {
+            color: #18BC9C;
+        }
 
-#mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
-  color: #fff;
-}
+        #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
+            color: #fff;
+        }
 
-#mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #18BC9C;
-}
+        #mainNav .navbar-nav li.nav-item a.nav-link.active {
+            color: #18BC9C;
+        }
 
-#mainNav .navbar-toggler {
-  font-size: 80%;
-  padding: 0.1rem;
+        #mainNav .navbar-toggler {
+            font-size: 80%;
+            padding: 0.1rem;
+        }
 
-}
+    .btn-status {
+        /*  font-size: 1.3em; */
+        padding: 5px;
+        font-weight: bold;
+    }
 
-	.btn-status{
-  /*  font-size: 1.3em; */
-   padding:5px;
- 
-   font-weight: bold;
-}
+    table {
+        display: table;
+        border-spacing: 2px;
+        border-color: grey;
+    }
 
-table {
-    display: table;
+    .figure {
+        margin-right: 10px;
+    }
 
-    border-spacing: 2px;
-    border-color: grey;
-}
+    .border-3 {
+        border-width: 3px !important;
+        border-radius: 8px;
+        padding: 6px 6px;
+    }
 
-.figure {
-  margin-right:10px;
-}
+    .border-2 {
+        border-width: 2px !important;
+        border-radius: 8px;
+        padding: 6px 6px;
+    }
 
-  </style>
- 
+
+</style>
+
 <body data-spy="scroll" data-target="#navbarEZQUO" data-offset="70">
-   
-  	
 
-	        <nav class="navbar navbar-expand-md fixed-top navbar-default  " role="navigation" id="mainNav">
-			<div class="container">
+
+    <nav class="navbar navbar-expand-md fixed-top navbar-default  " role="navigation" id="mainNav">
+        <div class="container">
             <a class="navbar-brand" href="#">EZ-QUO</a>
-            <button type="button" class="navbar-toggler navbar-toggler-right " data-toggle="collapse" data-target="#navbarEZQUO">
-			
-            </button>
-			
+            <button type="button" class="navbar-toggler navbar-toggler-right " data-toggle="collapse" data-target="#navbarEZQUO"></button>
 
             <div class="collapse navbar-collapse" id="navbarEZQUO">
-              <ul class="nav navbar-nav mr-auto">
-			  
-		
-			    <li class="nav-item">
-					<a class="nav-link py-3 px-lg-3 rounded js-scroll-trigger" href="#item">Item </a>
-				</li>
-                <li class="nav-item">
-					<a id="navbm" class="nav-link py-3px-lg-3 rounded js-scroll-trigger navbottom" href="#bottomhr">Total</a>
-				</li>
-			
-              
-             </ul>
-			 
-			
-			  <button type="button" class="btn btn-default navbar-btn btn-status ">Wish List</button>&nbsp;
-			  <button type="button" class="btn btn-default navbar-btn btn-status">Save For Later</button>&nbsp;
-			  <button type="button" class="btn btn-default navbar-btn btn-status">Submit</button>&nbsp;
-			
-				
-         
+                <ul class="nav navbar-nav mr-auto">
 
-          </div><!-- /.navbar-collapse -->
-		  </div>
-        </nav><!-- /navbar -->
-			
-		
-		<div class="container-fluid "><!-- Entire Width of the View Port -->
-		<div class="row "><!-- Entire Row -->
 
-		  <div class="col-sm-4 border-right border-left border-success ">
-		  			<!-- Carousel   -->
-			<div id="carouselExampleSlidesOnly" class="carousel slide mbl" data-ride="carousel">
-			  <div class="carousel-inner ">
-				<div class="carousel-item active">
-				  <img class="d-block w-100 " src="flatui/img/portfolio/MWSETf.png" alt="First slide">
-				</div>
-				<div class="carousel-item">
-				  <img class="d-block w-100" src="flatui/img/portfolio/OCOvenF.png" alt="Second slide">
-				</div>
-				<div class="carousel-item">
-				  <img class="d-block w-100" src="flatui/img/portfolio/circus.png" alt="Third slide">
-				</div>
-				<div class="carousel-item">
-				  <img class="d-block w-100 " src="flatui/img/portfolio/game.png" alt="First slide">
-				</div>
-				<div class="carousel-item">
-				  <img class="d-block w-100" src="flatui/img/portfolio/safe.png" alt="Second slide">
-				</div>
-				<div class="carousel-item">
-				  <img class="d-block w-100" src="flatui/img/portfolio/submarine.png" alt="Third slide">
-				</div>				
-			  </div>
-			</div>
-     		<!-- Carousel   -->		
-		  
-		  
-		  
-		  		<!-- SEARCH BOX -------------->
-				  <div class="input-group input-group-rounded input-group-sm">
-			    <input type="text" class="form-control " placeholder="Search" id="search-query-3">
-                  <span class="input-group-btn">
-                    <button type="submit" class="btn"><span class="fui-search"></span></button>
-                  </span>
-					</div>
-			  <!-- SEARCH BOX -------------->	
-				<div class="input-group">				
-				<label class="radio" for="radio3">
-                  <input type="radio" name="optionsRadios1" value="" id="radio3" data-toggle="radio" checked="checked" >
-                  All
-                </label> &nbsp;				
-				 <label class="radio" for="radio1">
-                  <input type="radio" name="optionsRadios1" value="" id="radio1" data-toggle="radio">
-                  Linked 
-                </label>&nbsp;	
-                <label class="radio" for="radio2">
-                  <input type="radio" name="optionsRadios1" value="" id="radio2" data-toggle="radio" >
-                  Paper 
-                </label>
+                    <li class="nav-item">
+                        <a class="nav-link py-3 px-lg-3 rounded js-scroll-trigger" href="#item">Item </a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="navbm" class="nav-link py-3px-lg-3 rounded js-scroll-trigger navbottom" href="#bottomhr">Total</a>
+                    </li>
 
-			  <a href="#" class="btn btn-primary btn-xs"> Reset</span></a>
-			  
-				</div>
-				
-				
-				
-				<div class="cardtop mbl ">
-				
-				<figure class="figure ">
-				  <img src="flatui/img/CBWRC.png" class="figure-img img-fluid imgstyle " alt="A generic square placeholder image with rounded corners in a figure.">
-				  <figcaption >Majestic </figcaption>
-				  <small class="text-muted">3 mins ago</small>
-				</figure>
-				<figure class="figure ">
-				  <img src="flatui/img/OCGwdc.png" class="figure-img img-fluid imgstyle " alt="A generic square placeholder image with rounded corners in a figure.">
-				  <figcaption >Major </figcaption>
-				  <small class="text-muted">3 mins ago</small>
-				</figure>				
-				<figure class="figure ">
-				  <img src="flatui/img/MWDRAWER.png" class="figure-img img-fluid imgstyle " alt="A generic square placeholder image with rounded corners in a figure.">
-				  <figcaption >Modern </figcaption>
-				  <small class="text-muted">3 mins ago</small>
-				</figure>	
 
-				<figure class="figure ">
-				  <img src="flatui/img/CBWRC.png" class="figure-img img-fluid imgstyle " alt="A generic square placeholder image with rounded corners in a figure.">
-				  <figcaption >Majestic </figcaption>
-				  <small class="text-muted">6 mins ago</small>
-				</figure>
-				<figure class="figure ">
-				  <img src="flatui/img/OCGwdc.png" class="figure-img img-fluid imgstyle " alt="A generic square placeholder image with rounded corners in a figure.">
-				  <figcaption >Major </figcaption>
-				  <small class="text-muted">8 mins ago</small>
-				</figure>				
-				<figure class="figure ">
-				  <img src="flatui/img/MWDRAWER.png" class="figure-img img-fluid imgstyle " alt="A generic square placeholder image with rounded corners in a figure.">
-				  <figcaption >CHUNGHUA </figcaption>
-				  <small class="text-muted">13 mins ago</small>
-				</figure>	
-			
-			
-		
+                </ul>
 
-			</div>
-			
 
-					
-	
-	
-	
-	
-	
-	
-	
-	
-			  
+                <button type="button" class="btn btn-default navbar-btn btn-status ">Wish List</button>&nbsp;
+                <button type="button" class="btn btn-default navbar-btn btn-status">Save For Later</button>&nbsp;
+                <button type="button" class="btn btn-default navbar-btn btn-status">Submit</button>&nbsp;
 
 
 
 
-
-		  </div>  <!-- circled img -->
-		 
-		<div class="col-sm "><!-- Right -->
-
-		
-		
-				<div class="circled mbl">	
-
-					<figure class="figure figure-light">
-					  <img class="figure-img img-fluid imgstyle"  src= "flatui/img/icons/clipboard.svg"/>
-			
-					  <figcaption > 
-						<a href="#" class="btn btn-dark "> 
-					  Job Site  <span class="badge badge-light">5</span>
-					 	</a> 
-					  </figcaption>
-					</figure>
-		
-					<figure class="figure ">
-					  <img class="figure-img img-fluid imgstyle"  src= "flatui/img/icons/clipboard.svg"/>	
-
-					  <figcaption >
-						 <a href="#" class="btn btn-primary "> 			  
-					  Wish List&nbsp; <span class="badge badge-light">8</span>
-					 	</a>
-					  </figcaption>
-					</figure>
-				
-					<figure class="figure ">
-					  <img src="flatui/img/icons/clipboard.svg" class="figure-img img-fluid imgstyle " alt="A generic square placeholder image with rounded corners in a figure.">
-
-					  <figcaption >
-							 <a href="#" class="btn btn-dark ">  
-					  Opening &nbsp;<span class="badge badge-light">15</span>
-							  </a>
-					  </figcaption>
-					</figure>
-
-					<figure class="figure ">
-					  <img src="flatui/img/icons/clipboard.svg" class="figure-img img-fluid imgstyle" alt="A generic square placeholder image with rounded corners in a figure.">
-						
-					  <figcaption >
-						<a href="#" class="btn btn-primary "> 	  
-					  Processing  <span class="badge badge-light">23</span>
-						</a>		  
-					  </figcaption>
-					</figure>	
-
-					
-					<figure class="figure ">
-					  <img src="flatui/img/icons/clipboard.svg" class="figure-img img-fluid imgstyle" alt="A generic square placeholder image with rounded corners in a figure.">
-					  <figcaption >
-						<a href="#" class="btn btn-dark "> 			  
-					  Back Order  <span class="badge badge-light">2</span>
-						</a>	  
-					  </figcaption>
-					</figure>
-
-					<figure class="figure ">
-					  <img src="flatui/img/icons/clipboard.svg" class="figure-img img-fluid imgstyle" alt="A generic square placeholder image with rounded corners in a figure.">
-
-					  <figcaption >
-							<a href="#" class="btn btn-primary "> 	  
-					  R.M.A  <span class="badge badge-light">1</span>
-						</a>
-						</figcaption>
-					</figure>		
-		
-		
-	
-		
-			</div>
-			
-			
-			
-		
-			
-			
-			
-				  
-			  
-          <select id="select2" multiple="multiple" class="form-control multiselect multiselect-primary mbl " data-toggle="select">
-            <option value="0" selected>QUO#</option>
-            <option value="1" selected>Vendor</option>
-            <option value="2" selected>Style</option>
-            <option value="3" selected>Amount</option>
-            <option value="4" selected>PO</option>
-            <option value="5">KD</option>			
-          </select>
-					  		
-			  <!-- Search Details Box ------->
-                <div class="input-group mbl">			
-				
-					<button class="btn btn-primary ">
-					  <span class="fui-new"></span>New
-					</button>
-
-					<div class="btn-group">
-					  <button class="btn btn-inverse dropdown-toggle" type="button" data-toggle="dropdown">
-					  More...
-					  </button>
-					  <ul class="dropdown-menu dropdown-menu-inverse" role="menu">
-						<li><a href="#">Action</a></li>
-						<li><a href="#">Another action</a></li>
-						<li><a href="#">Something else here</a></li>
-						<li class="divider"></li>
-						<li><a href="#">Separated link</a></li>
-					  </ul>
-					</div>
+            </div><!-- /.navbar-collapse -->
+        </div>
+    </nav><!-- /navbar -->
 
 
-                  <input type="text" class="form-control" placeholder="Search" id="search-query-3">
-                  <span class="input-group-btn">
-                    <button type="submit" class="btn"><span class="fui-search"></span></button>
-                  </span>
-
-			  
+    <div class="container-fluid ">
+        <!-- Entire Width of the View Port -->
+        <div class="row ">
+            <!-- Entire Row -->
+            <div class="col-sm-4 border-right border-left border-success ">
+                <!-- Carousel   -->
+                <div id="carouselExampleSlidesOnly" class="carousel slide mbl" data-ride="carousel">
+                    <div class="carousel-inner ">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100 " src="flatui/img/portfolio/MWSETf.png" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="flatui/img/portfolio/OCOvenF.png" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="flatui/img/portfolio/circus.png" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 " src="flatui/img/portfolio/game.png" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="flatui/img/portfolio/safe.png" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="flatui/img/portfolio/submarine.png" alt="Third slide">
+                        </div>
+                    </div>
                 </div>
- 			  <!-- Search Details Box ------->  
- 		<div class="alert alert-success" role="alert">
-			This is a success alert—check it out!
-		</div>
-			  
-			 	<!-- btn toolbar -->
-		<div class="table-responsive">
-		<table class="table table-striped table-sm">
-              <thead>
-                <tr>
-                  <th>QUO#</th>
-                  <th>Vendor</th>
-                  <th>Style</th>
-                  <th>Amount</th>
-                  <th>Action</th>
-				  <th>PO#</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1,001</td>
-                  <td>Majestic</td>
-                  <td>LO</td>
-                  <td>2300.00</td>
-                  <td>
-				  				  
-				  	  <div class="btn-group">
-					  <button class="btn btn-xs btn-dark " type="button" data-toggle="dropdown">
-						<span class="fui-list-bulleted"></span>
-					  </button>
-					  <ul class="dropdown-menu dropdown-menu-inverse" role="menu">
-						<li><a href="#">Modify</a></li>
-						<li><a href="#">Remove</a></li>
-						<li><a href="#">Something else here</a></li>
-						<li class="divider"></li>
-						<li><a href="#">Separated link</a></li>
-					  </ul>
-					</div>					  
-					  <a href="#" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
+                <!-- Carousel   -->
+                <!-- SEARCH BOX -------------->
+                <div class="input-group input-group-rounded input-group-sm">
+                    <input type="text" class="form-control " placeholder="Search" id="search-query-3">
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn"><span class="fui-search"></span></button>
+                    </span>
+                </div>
+                <!-- SEARCH BOX -------------->
+                <div class="input-group">
+                    <label class="radio" for="radio3">
+                        <input type="radio" name="optionsRadios1" value="" id="radio3" data-toggle="radio" checked="checked">
+                        All
+                    </label> &nbsp;
+                    <label class="radio" for="radio1">
+                        <input type="radio" name="optionsRadios1" value="" id="radio1" data-toggle="radio">
+                        Linked
+                    </label>&nbsp;
+                    <label class="radio" for="radio2">
+                        <input type="radio" name="optionsRadios1" value="" id="radio2" data-toggle="radio">
+                        Paper
+                    </label>
 
-				  
-				  </td>
-				  <td>abc</td>
-                </tr>
-                <tr>
-                  <td>1,002</td>
-                  <td>MJ</td>
-                  <td>NY</td>
-                  <td>1431.00</td>
-				  <td>
-				  
-				  	  <div class="btn-group">
-					  <button class="btn btn-xs btn-dark " type="button" data-toggle="dropdown">
-						<span class="fui-list-bulleted"></span>
-					  </button>
-					  <ul class="dropdown-menu dropdown-menu-inverse" role="menu">
-						<li><a href="#">Modify</a></li>
-						<li><a href="#">Remove</a></li>
-						<li><a href="#">Something else here</a></li>
-						<li class="divider"></li>
-						<li><a href="#">Separated link</a></li>
-					  </ul>
-					</div>					  
-					  <a href="#" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
 
-				  
-				  </td>
-                  <td>elit</td>
-                </tr>
-                <tr>
-                  <td>1,003</td>
-                  <td>CHUNGHUA</td>
-                  <td>nec</td>
-                  <td>2522.00</td>
-				  <td>
-				  				  
-				  	  <div class="btn-group">
-					  <button class="btn btn-xs btn-dark " type="button" data-toggle="dropdown">
-						<span class="fui-list-bulleted"></span>
-					  </button>
-					  <ul class="dropdown-menu dropdown-menu-inverse" role="menu">
-						<li><a href="#">Modify</a></li>
-						<li><a href="#">Remove</a></li>
-						<li><a href="#">Something else here</a></li>
-						<li class="divider"></li>
-						<li><a href="#">Separated link</a></li>
-					  </ul>
-					</div>					  
-					  <a href="#" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
+                </div>
 
-				  
-				  </td>
-                  <td>Praesent</td>
-                </tr>
-                <tr>
-                  <td>1,003</td>
-                  <td>Majestic</td>
-                  <td>MW</td>
-                  <td>3222.00</td>
-				  <td>
-				  				  
-				  	  <div class="btn-group">
-					  <button class="btn btn-xs btn-dark " type="button" data-toggle="dropdown">
-						<span class="fui-list-bulleted"></span>
-					  </button>
-					  <ul class="dropdown-menu dropdown-menu-inverse" role="menu">
-						<li><a href="#">Modify</a></li>
-						<li><a href="#">Remove</a></li>
-						<li><a href="#">Something else here</a></li>
-						<li class="divider"></li>
-						<li><a href="#">Separated link</a></li>
-					  </ul>
-					</div>					  
-					  <a href="#" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
 
-				  
-				  </td>
-                  <td>ante</td>
-                </tr>
-                <tr>
-                  <td>1,004</td>
-                  <td>Modern</td>
-                  <td>EP</td>
-                  <td>1232.00-</td>
-				  <td>
-				  				  
-				  	  <div class="btn-group">
-					  <button class="btn btn-xs btn-dark " type="button" data-toggle="dropdown">
-						<span class="fui-list-bulleted"></span>
-					  </button>
-					  <ul class="dropdown-menu dropdown-menu-inverse" role="menu">
-						<li><a href="#">Modify</a></li>
-						<li><a href="#">Remove</a></li>
-						<li><a href="#">Something else here</a></li>
-						<li class="divider"></li>
-						<li><a href="#">Separated link</a></li>
-					  </ul>
-					</div>					  
-					  <a href="#" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
 
-				  
-				  </td>
-                  <td>nisi</td>
-                </tr>
-                <tr>
-                  <td>1,005</td>
-                  <td>Majestic</td>
-                  <td>OC</td>
-                  <td>2563.00</td>
-				  <td><a href="#" class="btn btn-light btn-xs">ADD</a></td>
-                  <td>at</td>
-                </tr>
-                <tr>
-                  <td>1,006</td>
-                  <td>MJ</td>
-                  <td>OE</td>
-                  <td>2230.00</td>
-				  <td><a href="#" class="btn btn-light btn-xs">ADD</a></td>
-                  <td>Duis</td>
-                </tr>
-                <tr>
-                  <td>1,007</td>
-                  <td>EAC</td>
-                  <td>NN</td>
-                  <td>2236.00</td>
-				  <td><a href="#" class="btn btn-light btn-xs">ADD</a></td>
-                  <td>mauris</td>
-                </tr>
-                <tr>
-                  <td>1,008</td>
-                  <td>EO</td>
-                  <td>EE</td>
-                  <td>132.00</td>
-				  <td><a href="#" class="btn btn-light btn-xs">ADD</a></td>
-                  <td>sed</td>
-                </tr>
-                <tr>
-                  <td>1,009</td>
-                  <td>semper</td>
-                  <td>IO</td>
-                  <td>256.20</td>
-				  <td><a href="#" class="btn btn-light btn-xs">ADD</a></td>
-                  <td>Mauris</td>
-                </tr>
-                <tr>
-                  <td>1,010</td>
-                  <td>LB</td>
-                  <td>EE</td>
-                  <td>886.00</td>
-				  <td><a href="#" class="btn btn-light btn-xs">ADD</a></td>
-                  <td>arcu</td>
-                </tr>
-                <tr>
-                  <td>1,011</td>
-                  <td>OU</td>
-                  <td>MC</td>
-                  <td>339.00</td>
-				  <td><a href="#" class="btn btn-light btn-xs">ADD</a></td>
-                  <td>aptent</td>
-                </tr>
-                <tr>
-                  <td>1,012</td>
-                  <td>ESG</td>
-                  <td>AA</td>
-                  <td>689.00</td>
-				  <td><a href="#" class="btn btn-light btn-xs">ADD</a></td>
-                  <td>litora</td>
-                </tr>
-                <tr>
-                  <td>1,013</td>
-                  <td>AOK</td>
-                  <td>per</td>
-                  <td>258.00</td>
-				  <td><a href="#" class="btn btn-light btn-xs">ADD</a></td>
-                  <td>nostra</td>
-                </tr>
-                <tr>
-                  <td>1,014</td>
-                  <td>EBC</td>
-                  <td>CB</td>
-                  <td>698.00</td>
-				  <td><a href="#" class="btn btn-light btn-xs">ADD</a></td>
-                  <td>Curabitur</td>
-                </tr>
-                <tr>
-                  <td>1,015</td>
-                  <td>RCS</td>
-                  <td>EE</td>
-                  <td>986.30</td>
-				  <td><a href="#" class="btn btn-light btn-xs">ADD</a></td>
-                  <td>libero</td>
-                </tr>
-              </tbody>
-            </table>
-		
-		</div>
-		
-		
-		
-		
-		</div>
-		</div><!-- Right -->
-		
-		</div><!--  Entire Width of the View Port -->
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		<hr id="bottomhr">
-		
-		
-	
+                <div class="cardtop mbl ">
+
+                    <a href="#">
+                        <figure class="figure ">
+
+                            <img src="flatui/img/icons/clipboard.svg" class="figure-img img-fluid imgstyle " alt="A generic square placeholder image with rounded corners in a figure.">
+                            <figcaption>
+                                <b data-toggle="tooltip" title="List All of The Quote from every Vendor, including different kind of Quote">
+                                    Reset All
+                                </b>
+                            </figcaption>
+                            <small class="text-muted">3 mins ago</small>
+
+                        </figure>
+                    </a>
+
+                    <figure class="figure ">
+                        <img src="flatui/img/OCGwdc.png" class="figure-img img-fluid imgstyle " alt="A generic square placeholder image with rounded corners in a figure.">
+                        <figcaption>
+                            <b data-toggle="tooltip" title="List The Quote from this Vendor">
+                                Major
+                            </b>
+                        </figcaption>
+                        <small class="text-muted">3 mins ago</small>
+                    </figure>
+                    <figure class="figure ">
+                        <img src="flatui/img/MWDRAWER.png" class="figure-img img-fluid imgstyle " alt="A generic square placeholder image with rounded corners in a figure.">
+                        <figcaption>
+                            <b data-toggle="tooltip" title="List The Quote from this Vendor">
+                                Modern
+                            </b>
+                        </figcaption>
+                        <small class="text-muted">3 mins ago</small>
+                    </figure>
+                    <figure class="figure ">
+                        <img src="flatui/img/CBWRC.png" class="figure-img img-fluid imgstyle " alt="A generic square placeholder image with rounded corners in a figure.">
+                        <figcaption>
+                            <b data-toggle="tooltip" title="List The Quote from this Vendor">
+                                Majestic
+                            </b>
+                        </figcaption>
+                        <small class="text-muted">6 mins ago</small>
+                    </figure>
+                    <figure class="figure ">
+                        <img src="flatui/img/OCGwdc.png" class="figure-img img-fluid imgstyle " alt="A generic square placeholder image with rounded corners in a figure.">
+                        <figcaption>
+                            <b data-toggle="tooltip" title="List The Quote from this Vendor">
+                                Major
+                            </b>
+                        </figcaption>
+                        <small class="text-muted">8 mins ago</small>
+                    </figure>
+                    <figure class="figure ">
+                        <img src="flatui/img/MWDRAWER.png" class="figure-img img-fluid imgstyle " alt="A generic square placeholder image with rounded corners in a figure.">
+                        <figcaption>
+                            <b data-toggle="tooltip" title="List The Quote from this Vendor">
+                                CHUNGHUA
+                            </b>
+                        </figcaption>
+                        <small class="text-muted">13 mins ago</small>
+                    </figure>
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>  <!-- circled img -->
+
+            <div class="col-sm ">
+                <!-- Right -->
+
+
+                <div class="circled mbl border border-2">
+
+                    <figure class="figure figure-light border">
+
+                        <figcaption>
+
+                            <a href="#" class="btn btn-dark ">
+                                <span class="fui-document"></span>
+                                Job Site  <span class="badge badge-light">5</span>
+                            </a>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="figure ">
+
+                        <figcaption>
+                            <a href="#" class="btn btn-primary ">
+                                <span class="fui-document"></span>
+                                Wish List&nbsp; <span class="badge badge-light">8</span>
+                            </a>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="figure ">
+
+                        <figcaption>
+                            <a href="#" class="btn btn-dark ">
+                                <span class="fui-document"></span>
+                                Opening &nbsp;<span class="badge badge-light">15</span>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure class="figure ">
+
+                        <figcaption>
+                            <a href="#" class="btn btn-primary ">
+                                <span class="fui-document"></span>
+                                Processing  <span class="badge badge-light">23</span>
+                            </a>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="figure ">
+
+                        <figcaption>
+                            <a href="#" class="btn btn-dark ">
+                                <span class="fui-document"></span>
+                                Back Order  <span class="badge badge-light">2</span>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure class="figure ">
+
+                        <figcaption>
+                            <a href="#" class="btn btn-primary ">
+                                <span class="fui-document"></span>
+                                R.M.A  <span class="badge badge-light">1</span>
+                            </a>
+                        </figcaption>
+                    </figure>
+
+
+
+
+                </div>
+
+
+
+
+
+
+                <div class="border border-2">
+
+
+                    <select id="select2" multiple="multiple" class="form-control multiselect multiselect-primary mbl " data-toggle="select">
+                        <option value="0" selected>QUO#</option>
+                        <option value="1" selected>Vendor</option>
+                        <option value="2" selected>Style</option>
+                        <option value="3" selected>Amount</option>
+                        <option value="4" selected>PO</option>
+                        <option value="5">KD</option>
+                    </select>
+
+                    <!-- Search Details Box ------->
+                    <div class="input-group mbl">
+
+                        <button class="btn btn-primary " data-toggle="modal" data-target="#exampleModal">
+                            <span class="fui-new"></span>New
+                        </button>
+                        <div class="btn-group">
+                            <button class="btn btn-inverse dropdown-toggle" type="button" data-toggle="dropdown">
+                                More...
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-inverse" role="menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+
+                        <input type="text" class="form-control" placeholder="Search" id="search-query-3">
+                        <span class="input-group-btn">
+                            <button type="submit" class="btn"><span class="fui-search"></span></button>
+                        </span>
+
+                    </div>
+
+
+                </div>
+                <!-- Search Details Box ------->
+                <div class="alert alert-success" role="alert">
+                    This is a success alert—check it out!
+                </div>
+
+                <!-- btn toolbar -->
+                <div class="table-responsive">
+                    <table class="table table-striped table-sm">
+                        <thead>
+                            <tr>
+                                <th>QUO#</th>
+                                <th>Vendor</th>
+                                <th>Style</th>
+                                <th>Amount</th>
+                                <th>Action</th>
+                                <th>PO#</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1,001</td>
+                                <td>Majestic</td>
+                                <td>LO</td>
+                                <td>2300.00</td>
+                                <td>
+
+                                    <div class="btn-group">
+                                        <button class="btn btn-xs btn-dark " type="button" data-toggle="dropdown">
+                                            <span class="fui-list-bulleted"></span>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-inverse" role="menu">
+                                            <li><a href="#">Modify</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
+
+                                </td>
+                                <td>abc</td>
+                            </tr>
+                            <tr>
+                                <td>1,002</td>
+                                <td>MJ</td>
+                                <td>NY</td>
+                                <td>1431.00</td>
+                                <td>
+
+                                    <div class="btn-group">
+                                        <button class="btn btn-xs btn-dark " type="button" data-toggle="dropdown">
+                                            <span class="fui-list-bulleted"></span>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-inverse" role="menu">
+                                            <li><a href="#">Modify</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
+
+                                </td>
+                                <td>elit</td>
+                            </tr>
+                            <tr>
+                                <td>1,003</td>
+                                <td>CHUNGHUA</td>
+                                <td>nec</td>
+                                <td>2522.00</td>
+                                <td>
+
+                                    <div class="btn-group">
+                                        <button class="btn btn-xs btn-dark " type="button" data-toggle="dropdown">
+                                            <span class="fui-list-bulleted"></span>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-inverse" role="menu">
+                                            <li><a href="#">Modify</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
+
+                                </td>
+                                <td>Praesent</td>
+                            </tr>
+                            <tr>
+                                <td>1,003</td>
+                                <td>Majestic</td>
+                                <td>MW</td>
+                                <td>3222.00</td>
+                                <td>
+
+                                    <div class="btn-group">
+                                        <button class="btn btn-xs btn-dark " type="button" data-toggle="dropdown">
+                                            <span class="fui-list-bulleted"></span>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-inverse" role="menu">
+                                            <li><a href="#">Modify</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
+
+                                </td>
+                                <td>ante</td>
+                            </tr>
+                            <tr>
+                                <td>1,004</td>
+                                <td>Modern</td>
+                                <td>EP</td>
+                                <td>1232.00-</td>
+                                <td>
+
+                                    <div class="btn-group">
+                                        <button class="btn btn-xs btn-dark " type="button" data-toggle="dropdown">
+                                            <span class="fui-list-bulleted"></span>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-inverse" role="menu">
+                                            <li><a href="#">Modify</a></li>
+                                            <li><a href="#">Remove</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
+
+                                </td>
+                                <td>nisi</td>
+                            </tr>
+                            <tr>
+                                <td>1,005</td>
+                                <td>Majestic</td>
+                                <td>OC</td>
+                                <td>2563.00</td>
+                                <td><a href="#" class="btn btn-light btn-xs">ADD</a></td>
+                                <td>at</td>
+                            </tr>
+                            <tr>
+                                <td>1,006</td>
+                                <td>MJ</td>
+                                <td>OE</td>
+                                <td>2230.00</td>
+                                <td><a href="#" class="btn btn-light btn-xs">ADD</a></td>
+                                <td>Duis</td>
+                            </tr>
+                            <tr>
+                                <td>1,007</td>
+                                <td>EAC</td>
+                                <td>NN</td>
+                                <td>2236.00</td>
+                                <td><a href="#" class="btn btn-light btn-xs">ADD</a></td>
+                                <td>mauris</td>
+                            </tr>
+                            <tr>
+                                <td>1,008</td>
+                                <td>EO</td>
+                                <td>EE</td>
+                                <td>132.00</td>
+                                <td><a href="#" class="btn btn-light btn-xs">ADD</a></td>
+                                <td>sed</td>
+                            </tr>
+                            <tr>
+                                <td>1,009</td>
+                                <td>semper</td>
+                                <td>IO</td>
+                                <td>256.20</td>
+                                <td><a href="#" class="btn btn-light btn-xs">ADD</a></td>
+                                <td>Mauris</td>
+                            </tr>
+                            <tr>
+                                <td>1,010</td>
+                                <td>LB</td>
+                                <td>EE</td>
+                                <td>886.00</td>
+                                <td><a href="#" class="btn btn-light btn-xs">ADD</a></td>
+                                <td>arcu</td>
+                            </tr>
+                            <tr>
+                                <td>1,011</td>
+                                <td>OU</td>
+                                <td>MC</td>
+                                <td>339.00</td>
+                                <td><a href="#" class="btn btn-light btn-xs">ADD</a></td>
+                                <td>aptent</td>
+                            </tr>
+                            <tr>
+                                <td>1,012</td>
+                                <td>ESG</td>
+                                <td>AA</td>
+                                <td>689.00</td>
+                                <td><a href="#" class="btn btn-light btn-xs">ADD</a></td>
+                                <td>litora</td>
+                            </tr>
+                            <tr>
+                                <td>1,013</td>
+                                <td>AOK</td>
+                                <td>per</td>
+                                <td>258.00</td>
+                                <td><a href="#" class="btn btn-light btn-xs">ADD</a></td>
+                                <td>nostra</td>
+                            </tr>
+                            <tr>
+                                <td>1,014</td>
+                                <td>EBC</td>
+                                <td>CB</td>
+                                <td>698.00</td>
+                                <td><a href="#" class="btn btn-light btn-xs">ADD</a></td>
+                                <td>Curabitur</td>
+                            </tr>
+                            <tr>
+                                <td>1,015</td>
+                                <td>RCS</td>
+                                <td>EE</td>
+                                <td>986.30</td>
+                                <td><a href="#" class="btn btn-light btn-xs">ADD</a></td>
+                                <td>libero</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+
+
+
+            </div>
+        </div><!-- Right -->
+
+    </div><!--  Entire Width of the View Port -->
+
+
+
+
+
+
+
+
+
+    <hr id="bottomhr">
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Choose Style </h5>
+                    <button type="button" class="close btn-lg" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modalstyle mbl">
+                        <figure class="figure figure-light">
+                            <img src="flatui/img/style/LO.png" class="figure-img img-fluid imgstyle" />
+
+                            <figcaption class="text-center">
+                                LO 
+                            </figcaption>
+                            <small class="text-muted">(Light Oak)</small>
+                            <small class="text-muted">30" 42"</small>
+                        </figure>
+
+                        <figure class="figure ">
+                            <img src="flatui/img/style/OC.png" class="figure-img img-fluid imgstyle" />
+                            <figcaption class="text-center">
+                                OC
+                            </figcaption>
+                            <small class="text-muted">(Overlay Cherry)</small>
+                            <small class="text-muted">30" 42"</small>
+                        </figure>
+
+                        <figure class="figure ">
+                            <img src="flatui/img/style/SN.png" class="figure-img img-fluid imgstyle " alt="A generic square placeholder image with rounded corners in a figure.">
+                            <figcaption class="text-center">
+                                SN 
+                            </figcaption>
+                            <small class="text-muted">(Shaker Nutmeg)</small>
+                            <small class="text-muted">30" 42"</small>
+                        </figure>
+                        <figure class="figure ">
+                            
+                            <img src="flatui/img/style/MA.png" class="figure-img img-fluid imgstyle" alt="A generic square placeholder image with rounded corners in a figure.">
+
+                            <figcaption class="text-center">
+                                MA
+                            </figcaption>
+                            <small class="text-muted">(Mocha)</small>
+                            <small class="text-muted">30" 39"</small>
+                        </figure>
+
+                        <figure class="figure ">
+                            <img src="flatui/img/style/CSG.png" class="figure-img img-fluid imgstyle" alt="A generic square placeholder image with rounded corners in a figure.">
+
+                            <figcaption class="text-center">
+                                CSG
+                            </figcaption>
+                            <small class="text-muted">(Cinnamon Spice Glaze)</small>
+                            <small class="text-muted">30" 39"</small>
+                        </figure>
+                        <figure class="figure ">
+                            <img src="flatui/img/style/AC.png" class="figure-img img-fluid imgstyle" alt="A generic square placeholder image with rounded corners in a figure.">
+
+                            <figcaption class="text-center">
+                                <small class="text-muted"></small>
+                                AC
+                            </figcaption>
+                            <small class="text-muted">(Aamerican Chestnut)</small>
+                            <small class="text-muted">30" 39"</small>
+                        </figure>
+
+
+                        <figure class="figure ">
+                            <img src="flatui/img/style/CB.png" class="figure-img img-fluid imgstyle" alt="A generic square placeholder image with rounded corners in a figure.">
+                            <figcaption class="text-center">
+                                CB 
+                            </figcaption>
+                            <small class="text-muted">(Casa Blanca)</small>
+                            <small class="text-muted">30" 39"</small>
+                        </figure>
+                        <figure class="figure ">
+                            <img src="flatui/img/style/MA.png" class="figure-img img-fluid imgstyle" alt="A generic square placeholder image with rounded corners in a figure.">
+                            <figcaption class="text-center">
+                                MW 
+                            </figcaption>
+                            <small class="text-muted">(Majestic White)</small>
+                            <small class="text-muted">30" 36" 39"</small>
+                        </figure>
+
+
+
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
     <!-- Bootstrap 4 requires Popper.js -->
     <script src="https://unpkg.com/popper.js@1.14.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
 
-	
     <script src="flatui/scripts/flat-ui.js"></script>
-	
-	<script src="flatui/scripts/application.js"></script>
-	
+
+    <script src="flatui/scripts/application.js"></script>
+
+
+    <script>
+
+        // Closes responsive menu when a scroll trigger link is clicked
+
+        $('.js-scroll-trigger').click(function () {
+            $('.navbar-collapse').collapse('hide');
+        });
+
+
+        // Collapse Navbar
+        var navbarCollapse = function () {
+            if ($("#mainNav").offset().top > 100) {
+                $("#mainNav").addClass("navbar-shrink");
+            } else {
+                $("#mainNav").removeClass("navbar-shrink");
+            }
+        };
+    </script>
 
 
 
-	<script>
-	
-	  // Closes responsive menu when a scroll trigger link is clicked
-	  
-  $('.js-scroll-trigger').click(function() {
-    $('.navbar-collapse').collapse('hide');
-  });
+    <script>
+        // img click
+
+        $('.imgstyle').on('click', function () {
+
+            $('#navbm')[0].click();
+        });
 
 
-	  // Collapse Navbar
-  var navbarCollapse = function() {
-    if ($("#mainNav").offset().top > 100) {
-      $("#mainNav").addClass("navbar-shrink");
-    } else {
-      $("#mainNav").removeClass("navbar-shrink");
-    }
-  };
-	</script>
-	
-	
-	
-	<script>
-	// img click
-
-	$('.imgstyle').on('click',function(){		
-
-		$('#navbm')[0].click();
-	});
-	
-	
-	</script>
-	
-	
-	<script>
-	/*
-	$(".circled2").hover(function(){
-		$(this).find("img").stop(true,true).animate({opacity: 0}, 400);
-		}, 
-		function() {
-		$('#imgstyle').attr('src','flatui/img/style/AC.png');
-		$(this).find("img").stop(true,true).animate({opacity: 1}, 600);
-		});
-	*/
-	</script>
+    </script>
 
 
-  </body>
-</html>	
+    <script>
+                    /*
+                    $(".circled2").hover(function(){
+                        $(this).find("img").stop(true,true).animate({opacity: 0}, 400);
+                        },
+                        function() {
+                        $('#imgstyle').attr('src','flatui/img/style/AC.png');
+                        $(this).find("img").stop(true,true).animate({opacity: 1}, 600);
+                        });
+                    */
+    </script>
+
+</body>
+</html>
