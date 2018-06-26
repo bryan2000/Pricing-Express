@@ -12,6 +12,7 @@
 <style>
 
 
+
     .tablepress-id-1 tbody td tr {
         font-size: 14px;
         height: 10px;
@@ -117,23 +118,19 @@
     }
 </style>
 <body data-spy="scroll" data-target="#navbarEZQUO" data-offset="70">
-
     <nav class="navbar navbar-expand-md fixed-top navbar-default  " role="navigation" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="#">EZ-QUO</a>
             <button type="button" class="navbar-toggler navbar-toggler-right " data-toggle="collapse" data-target="#navbarEZQUO"></button>
             <div class="collapse navbar-collapse" id="navbarEZQUO">
                 <ul class="nav navbar-nav mr-auto">
-
                     <li class="nav-item">
                         <a class="nav-link py-3 px-lg-3 rounded js-scroll-trigger" href="#item">Item </a>
                     </li>
                     <li class="nav-item">
                         <a id="navbm" class="nav-link py-3px-lg-3 rounded js-scroll-trigger navbottom" href="#bottomhr">Total</a>
                     </li>
-
                 </ul>
-
                 <button type="button" class="btn btn-default navbar-btn btn-status ">Wish List</button>&nbsp;
                 <button type="button" class="btn btn-default navbar-btn btn-status">Save For Later</button>&nbsp;
                 <button type="button" class="btn btn-default navbar-btn btn-status">Submit</button>&nbsp;
@@ -144,7 +141,6 @@
             </div><!-- /.navbar-collapse -->
         </div>
     </nav><!-- /navbar -->
-
     <div class="container-fluid ">
         <!-- Entire Width of the View Port -->
         <div class="row ">
@@ -195,9 +191,7 @@
                         <input type="radio" name="optionsRadios1" value="" id="radio2" data-toggle="radio">
                         Paper
                     </label>
-
                 </div>
-
                 <div class="cardtop mbl ">
                     <a href="#">
                         <figure class="figure ">
@@ -255,25 +249,19 @@
                         </figcaption>
                         <small class="text-muted">13 mins ago</small>
                     </figure>
-
                 </div>
 
 
 
-
-
-
             </div>  <!-- circled img -->
-            <div class="col-sm ">
+            <div class="col-sm text-center ">
                 <!-- Right -->
                 <a href="#"  data-toggle="modal" data-target="#exampleModal">
-                    <div class="alert alert-warning" >
-
-                        <span class="fui-new"></span>New
+                    <div class="alert alert-primary">
+                        <span class="fui-new"></span> &nbsp;&nbsp;&nbsp; New
 
                     </div>
                 </a>
-
 
                 <div class="circled mbl border border-2">
                     <figure class="figure figure-light border">
@@ -325,13 +313,9 @@
                         </figcaption>
                     </figure>
 
-
                 </div>
 
-
-
                 <div class="border border-2 mbl">
-
                     <select id="select2" multiple="multiple" class="form-control multiselect multiselect-primary mbl " data-toggle="select">
                         <option value="0" selected>QUO#</option>
                         <option value="1" selected>Vendor</option>
@@ -342,7 +326,6 @@
                     </select>
                     <!-- Search Details Box ------->
                     <div class="input-group mbl">
-
                         <div class="btn-group">
                             <button class="btn btn-inverse dropdown-toggle" type="button" data-toggle="dropdown">
                                 More...
@@ -360,7 +343,6 @@
                             <button type="submit" class="btn"><span class="fui-search"></span></button>
                         </span>
                     </div>
-
                 </div>
                 <!-- Search Details Box ------->
                 <div class="alert alert-dark" role="alert">
@@ -582,16 +564,12 @@
                     </table>
                 </div>
 
-
             </div>
         </div><!-- Right -->
     </div><!--  Entire Width of the View Port -->
 
 
-
-
     <hr id="bottomhr">
-
     <!-- Modal -->
     <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -605,7 +583,7 @@
                 <div class="modal-body">
                     <div class="modalstyle mbl">
                         <figure class="figure figure-light">
-                            <img src="flatui/img/style/LO.png" class="figure-img img-fluid imgstyle" />
+                            <img src="flatui/img/style/LO.png" class="figure-img img-fluid " alt="Light Oak" onclick="chosenstyle('LO');" />
                             <figcaption class="text-center">
                                 LO
                             </figcaption>
@@ -616,7 +594,7 @@
                             </div>
                         </figure>
                         <figure class="figure ">
-                            <img src="flatui/img/style/OC.png" class="figure-img img-fluid imgstyle" />
+                            <img src="flatui/img/style/OC.png" class="figure-img img-fluid imgstyle" alt="Overlay Cherry" onclick="chosenstyle('OC');"/>
                             <figcaption class="text-center">
                                 OC
                             </figcaption>
@@ -627,29 +605,29 @@
                             </div>
                         </figure>
                         <figure class="figure ">
-                            <img src="flatui/img/style/SN.png" class="figure-img img-fluid imgstyle " alt="A generic square placeholder image with rounded corners in a figure.">
+                            <img src="flatui/img/style/SN.png" class="figure-img img-fluid imgstyle " alt="Shaker Nutmeg"  onclick="chosenstyle('SN');">
                             <figcaption class="text-center">
                                 SN
                             </figcaption>
                             <div class="text-center">
-                            <small class="text-muted">(Shaker Nutmeg)</small>
+                                <small class="text-muted">(Shaker Nutmeg)</small>
                                 <br />
-                            <small class="text-muted">H 30"/42"</small>
-                                </div>
+                                <small class="text-muted">H 30"/42"</small>
+                            </div>
                         </figure>
                         <figure class="figure ">
-                            <img src="flatui/img/style/MA.png" class="figure-img img-fluid imgstyle" alt="A generic square placeholder image with rounded corners in a figure.">
+                            <img src="flatui/img/style/MA.png" class="figure-img img-fluid imgstyle" alt="Mocha"  onclick="chosenstyle('MA');">
                             <figcaption class="text-center">
                                 MA
                             </figcaption>
                             <div class="text-center">
-                            <small class="text-muted">(Mocha)</small>
+                                <small class="text-muted">(Mocha)</small>
                                 <br />
-                            <small class="text-muted">H 30"/39"</small>
-                                </div>
+                                <small class="text-muted">H 30"/39"</small>
+                            </div>
                         </figure>
                         <figure class="figure">
-                            <img src="flatui/img/style/CSG.png" class="figure-img img-fluid imgstyle" alt="A generic square placeholder image with rounded corners in a figure.">
+                            <img src="flatui/img/style/CSG.png" class="figure-img img-fluid imgstyle" alt="Cinnamon Spice Glaze"  onclick="chosenstyle('CSG');">
                             <figcaption class="text-center">
                                 CSG
                             </figcaption>
@@ -657,23 +635,22 @@
                                 <small class="text-muted">(Cinnamon Spice Glaze)</small>
                                 <br />
                                 <small class="text-muted">H 30"/39"</small>
-                              </div>
+                            </div>
                         </figure>
                         <figure class="figure ">
-                            <img src="flatui/img/style/AC.png" class="figure-img img-fluid imgstyle" alt="A generic square placeholder image with rounded corners in a figure.">
+                            <img src="flatui/img/style/AC.png" class="figure-img img-fluid imgstyle" alt="Aamerican Chestnut"  onclick="chosenstyle('AC');">
                             <figcaption class="text-center">
                                 <small class="text-muted"></small>
                                 AC
                             </figcaption>
                             <div class="text-center">
-                            <small class="text-muted">(Aamerican Chestnut)</small>
+                                <small class="text-muted">(Aamerican Chestnut)</small>
                                 <br />
-                            <small class="text-muted">H 30"/39"</small>
-                             </div>
+                                <small class="text-muted">H 30"/39"</small>
+                            </div>
                         </figure>
-
                         <figure class="figure ">
-                            <img src="flatui/img/style/CB.png" class="figure-img img-fluid imgstyle" alt="A generic square placeholder image with rounded corners in a figure.">
+                            <img src="flatui/img/style/CB.png" class="figure-img img-fluid imgstyle" alt="Casa Blanca"  onclick="chosenstyle('CB');">
                             <figcaption class="text-center">
                                 CB
                             </figcaption>
@@ -684,7 +661,7 @@
                             </div>
                         </figure>
                         <figure class="figure ">
-                            <img src="flatui/img/style/MA.png" class="figure-img img-fluid imgstyle" alt="A generic square placeholder image with rounded corners in a figure.">
+                            <img src="flatui/img/style/MA.png" class="figure-img img-fluid imgstyle" alt="Majestic White"  onclick="chosenstyle('MW');">
                             <figcaption class="text-center">
                                 MW
                             </figcaption>
@@ -694,9 +671,7 @@
                                 <small class="text-muted">H 30"/36"/39"</small>
                             </div>
                         </figure>
-
                     </div>
-
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -705,14 +680,12 @@
             </div>
         </div>
     </div>
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <!-- Bootstrap 4 requires Popper.js -->
     <script src="https://unpkg.com/popper.js@1.14.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
     <script src="flatui/scripts/flat-ui.js"></script>
     <script src="flatui/scripts/application.js"></script>
-
     <script>
 
         // Closes responsive menu when a scroll trigger link is clicked
@@ -731,7 +704,6 @@
             }
         };
     </script>
-
     <script>
         // img click
 
@@ -742,17 +714,23 @@
 
 
     </script>
-
     <script>
-                            /*
-                            $(".circled2").hover(function(){
-                                $(this).find("img").stop(true,true).animate({opacity: 0}, 400);
-                                },
-                                function() {
-                                $('#imgstyle').attr('src','flatui/img/style/AC.png');
-                                $(this).find("img").stop(true,true).animate({opacity: 1}, 600);
-                                });
-                            */
+                                    /*
+                                    $(".circled2").hover(function(){
+                                        $(this).find("img").stop(true,true).animate({opacity: 0}, 400);
+                                        },
+                                        function() {
+                                        $('#imgstyle').attr('src','flatui/img/style/AC.png');
+                                        $(this).find("img").stop(true,true).animate({opacity: 1}, 600);
+                                        });
+                                    */
+        function chosenstyle(stylecode) {
+            alert(stylecode);
+            /*var win = window.open("quotationflatui.html");
+            win.focus();*/
+            window.location.href = 'quotationflatui.html';
+
+        }
     </script>
 </body>
 </html>
