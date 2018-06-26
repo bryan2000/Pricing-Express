@@ -158,7 +158,7 @@
 
     <nav class="navbar navbar-expand-md fixed-top navbar-inverse " id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="#">EZ-QUO</a>
+            <a class="navbar-brand" href="#" onclick="dashboard();">EZ-QUO</a>
 
             <button type="button" class="navbar-toggler navbar-toggler-right " data-toggle="collapse" data-target="#navbarEZQUO"></button>
 
@@ -891,6 +891,10 @@
             */
         function itementer() {
             $("#divdetails").animate({ scrollTop: $("#divdetails")[0].scrollHeight }, 1000);
+        };
+        
+        function dashboard() {
+            window.location.href = 'quotationdashboard.html';
         };
 
 
