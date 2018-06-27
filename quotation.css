@@ -1,0 +1,215 @@
+
+       
+
+        #mainNav {
+            padding-top: 0.1rem;
+            padding-bottom: 0.1rem;
+            font-weight: 700;
+            font-family: 'Montserrat';
+        }
+
+            #mainNav .navbar-brand {
+                color: #fff;
+            }
+
+            #mainNav .navbar-nav {
+                margin-top: 0.1rem;
+                letter-spacing: 0.0625rem;
+            }
+
+                #mainNav .navbar-nav li.nav-item a.nav-link {
+                    color: #fff;
+                }
+
+                    #mainNav .navbar-nav li.nav-item a.nav-link:hover {
+                        color: #18BC9C;
+                    }
+
+                    #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
+                        color: #fff;
+                    }
+
+                    #mainNav .navbar-nav li.nav-item a.nav-link.active {
+                        color: #18BC9C;
+                    }
+
+            #mainNav .navbar-toggler {
+                font-size: 80%;
+                padding: 0.1rem;
+            }
+
+        @media (min-width: 992px) {
+            #mainNav {
+                padding-top: 0.2rem;
+                padding-bottom: 0.2rem;
+                -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+                -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+                transition: padding-top 0.3s, padding-bottom 0.3s;
+            }
+
+                #mainNav .navbar-brand {
+                    font-size: 2em;
+                    -webkit-transition: font-size 0.3s;
+                    -moz-transition: font-size 0.3s;
+                    transition: font-size 0.3s;
+                }
+
+                #mainNav .navbar-nav {
+                    margin-top: 0;
+                }
+
+                    #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
+                        color: #fff;
+                        background: #18BC9C;
+                    }
+
+                        #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
+                            color: #fff;
+                            background: #18BC9C;
+                        }
+
+                #mainNav.navbar-shrink {
+                    padding-top: 0.2rem;
+                    padding-bottom: 0.2rem;
+                }
+
+                    #mainNav.navbar-shrink .navbar-brand {
+                        font-size: 1.5em;
+                    }
+        }
+		
+		/******************************************************************
+		
+		*******************************************************************/
+		
+		
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            position: relative;
+            overflow-y: auto;
+            /*	font-size: 12px;
+        line-height: 1.72222;
+    */
+            padding-top: 70px; /* padding for fixed navbar */
+        }
+		
+        .tablepress-id-1 tbody td tr {
+            font-size: 14px;
+            height: 10px;
+        }
+
+
+        .btn-xs {
+            padding: 6px;
+        }
+		        .btn-status {
+            /*  font-size: 1.3em; */
+            padding: 5px;
+            font-weight: bold;
+        }
+
+        .circled img {
+            cursor: pointer;
+            margin-top: 10px;
+            display: inline-block;
+            border-radius: 5px;
+            height: 120px;
+            width: 100px;
+        }
+		
+		
+	.footer {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        background-color: #2C3E50;
+        color: #fff;
+    }
+
+    .copyright {
+        background-color: #1a252f;
+    }
+	
+	div.divdetails {
+       
+        height: 310px;
+        overflow: scroll;
+    }
+
+    section {
+        padding-top: 65px;
+        margin-top: -65px;
+    }
+		
+		
+			/******************************************************************
+			========================	Dashboard  ===================
+		*******************************************************************/
+		
+		#mainNavDB {
+        padding-top: 0.1rem;
+        padding-bottom: 0.1rem;
+        font-weight: 700;
+        font-family: 'Montserrat';
+    }
+
+        #mainNavDB .navbar-brand {
+            font-size: 2em;
+        }
+
+        #mainNavDB .navbar-nav li.nav-item a.nav-link:hover {
+            color: #18BC9C;
+        }
+
+        #mainNavDB .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
+            color: #fff;
+        }
+
+        #mainNavDB .navbar-nav li.nav-item a.nav-link.active {
+            color: #18BC9C;
+        }
+
+        #mainNavDB .navbar-toggler {
+            font-size: 80%;
+            padding: 0.1rem;
+        }
+		
+    .cardtop img {
+        cursor: pointer;
+        border-radius: 10px;
+        height: 85px;
+        width: 85px;
+    }
+
+    .modalstyle img {
+        cursor: pointer;
+        border-radius: 10px;
+        height: 203px;
+        width: 160px;
+    }
+		
+	.figure {
+        margin-right: 10px;
+    }	
+		
+		
+	.border-2 {
+        border-width: 2px !important;
+        border-radius: 8px;
+        padding: 6px 6px;
+    }	
+	
+	
+	
+	
+	
+		
+		
+		
+		
+		
+		
+		
+		
