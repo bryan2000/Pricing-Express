@@ -87,9 +87,9 @@
                     </label>
                 </div>
                 <div class="cardtop mbl ">
-                    <a href="#">
+                    <a href="#" onclick="vendorset(null)">
                         <figure class="figure ">
-                            <img src="flatui/img/icons/clipboard.svg" class="figure-img img-fluid imgstyle " alt="A generic square placeholder image with rounded corners in a figure.">
+                            <img src="flatui/img/icons/clipboard.svg" class="figure-img img-fluid  " alt="A generic square placeholder image with rounded corners in a figure.">
                             <figcaption>
                                 <b data-toggle="tooltip" title="List All of The Quote from every Vendor, including different kind of Quote">
                                     Reset All
@@ -99,7 +99,7 @@
                         </figure>
                     </a>
                     <figure class="figure ">
-                        <img src="flatui/img/OCGwdc.png" class="figure-img img-fluid imgstyle " alt="A generic square placeholder image with rounded corners in a figure.">
+                        <img src="flatui/img/OCGwdc.png" class="figure-img img-fluid " onclick="vendorset('Major');" alt="A generic square placeholder image with rounded corners in a figure.">
                         <figcaption>
                             <b data-toggle="tooltip" title="List The Quote from this Vendor">
                                 Major
@@ -108,7 +108,7 @@
                         <small class="text-muted">3 mins ago</small>
                     </figure>
                     <figure class="figure ">
-                        <img src="flatui/img/MWDRAWER.png" class="figure-img img-fluid imgstyle " alt="A generic square placeholder image with rounded corners in a figure.">
+                        <img src="flatui/img/MWDRAWER.png" class="figure-img img-fluid imgstyle " onclick="vendorset('Modern');" alt="A generic square placeholder image with rounded corners in a figure.">
                         <figcaption>
                             <b data-toggle="tooltip" title="List The Quote from this Vendor">
                                 Modern
@@ -117,7 +117,7 @@
                         <small class="text-muted">3 mins ago</small>
                     </figure>
                     <figure class="figure ">
-                        <img src="flatui/img/CBWRC.png" class="figure-img img-fluid imgstyle " alt="A generic square placeholder image with rounded corners in a figure.">
+                        <img src="flatui/img/CBWRC.png" class="figure-img img-fluid imgstyle " onclick="vendorset('Majestic');" alt="A generic square placeholder image with rounded corners in a figure.">
                         <figcaption>
                             <b data-toggle="tooltip" title="List The Quote from this Vendor">
                                 Majestic
@@ -126,7 +126,7 @@
                         <small class="text-muted">6 mins ago</small>
                     </figure>
                     <figure class="figure ">
-                        <img src="flatui/img/OCGwdc.png" class="figure-img img-fluid imgstyle " alt="A generic square placeholder image with rounded corners in a figure.">
+                        <img src="flatui/img/OCGwdc.png" class="figure-img img-fluid imgstyle " onclick="vendorset('Major');" alt="A generic square placeholder image with rounded corners in a figure.">
                         <figcaption>
                             <b data-toggle="tooltip" title="List The Quote from this Vendor">
                                 Major
@@ -135,7 +135,7 @@
                         <small class="text-muted">8 mins ago</small>
                     </figure>
                     <figure class="figure ">
-                        <img src="flatui/img/MWDRAWER.png" class="figure-img img-fluid imgstyle " alt="A generic square placeholder image with rounded corners in a figure.">
+                        <img src="flatui/img/MWDRAWER.png" class="figure-img img-fluid imgstyle " onclick="vendorset('CHUNGHUA');" alt="A generic square placeholder image with rounded corners in a figure.">
                         <figcaption>
                             <b data-toggle="tooltip" title="List The Quote from this Vendor">
                                 CHUNGHUA
@@ -150,9 +150,9 @@
             <div class="col-sm text-center ">
                 <!-- Right -->
                 <a href="#" data-toggle="modal" data-target="#exampleModal">
-                    <div class="alert alert-primary">
+                    <div class="alert alert-primary alertnew">
                         <span class="fui-new"></span> &nbsp;&nbsp;&nbsp; New
-
+                        <b ></b>
                     </div>
                 </a>
                 <div class="circled mbl border border-2">
@@ -238,9 +238,7 @@
                 </section>
 
                 <!-- Search Details Box ------->
-                <div class="alert alert-dark" role="alert">
-                    This is a success alert—check it out!
-                </div>
+
                 <section id="results">
                     <!-- btn toolbar -->
                     <div class="table-responsive">
@@ -274,7 +272,7 @@
                                                 <li><a href="#">Separated link</a></li>
                                             </ul>
                                         </div>
-                                        <a href="#" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
+                                        <a href="#" onclick="chosenstyle('LO');" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
                                     </td>
                                     <td>abc</td>
                                 </tr>
@@ -296,14 +294,14 @@
                                                 <li><a href="#">Separated link</a></li>
                                             </ul>
                                         </div>
-                                        <a href="#" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
+                                        <a href="#" onclick="chosenstyle('NY');" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
                                     </td>
                                     <td>elit</td>
                                 </tr>
                                 <tr>
                                     <td>1,003</td>
                                     <td>CHUNGHUA</td>
-                                    <td>nec</td>
+                                    <td>NR</td>
                                     <td>2522.00</td>
                                     <td>
                                         <div class="btn-group">
@@ -318,7 +316,7 @@
                                                 <li><a href="#">Separated link</a></li>
                                             </ul>
                                         </div>
-                                        <a href="#" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
+                                        <a href="#" onclick="chosenstyle('NR');" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
                                     </td>
                                     <td>Praesent</td>
                                 </tr>
@@ -340,7 +338,7 @@
                                                 <li><a href="#">Separated link</a></li>
                                             </ul>
                                         </div>
-                                        <a href="#" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
+                                        <a href="#" onclick="chosenstyle('MW');" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
                                     </td>
                                     <td>ante</td>
                                 </tr>
@@ -362,7 +360,7 @@
                                                 <li><a href="#">Separated link</a></li>
                                             </ul>
                                         </div>
-                                        <a href="#" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
+                                        <a href="#" onclick="chosenstyle('EP');" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
                                     </td>
                                     <td>nisi</td>
                                 </tr>
@@ -384,7 +382,7 @@
                                                 <li><a href="#">Separated link</a></li>
                                             </ul>
                                         </div>
-                                        <a href="#" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
+                                        <a href="#" onclick="chosenstyle('OC');" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
                                     </td>
                                     <td>at</td>
                                 </tr>
@@ -406,7 +404,7 @@
                                                 <li><a href="#">Separated link</a></li>
                                             </ul>
                                         </div>
-                                        <a href="#" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
+                                        <a href="#" onclick="chosenstyle('OE');" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
                                     </td>
                                     <td>Duis</td>
                                 </tr>
@@ -428,7 +426,7 @@
                                                 <li><a href="#">Separated link</a></li>
                                             </ul>
                                         </div>
-                                        <a href="#" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
+                                        <a href="#" onclick="chosenstyle('NN');" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
                                     </td>
                                     <td>mauris</td>
                                 </tr>
@@ -450,7 +448,7 @@
                                                 <li><a href="#">Separated link</a></li>
                                             </ul>
                                         </div>
-                                        <a href="#" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
+                                        <a href="#" onclick="chosenstyle('EE');" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
                                     </td>
                                     <td>sed</td>
                                 </tr>
@@ -472,7 +470,7 @@
                                                 <li><a href="#">Separated link</a></li>
                                             </ul>
                                         </div>
-                                        <a href="#" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
+                                        <a href="#" onclick="chosenstyle('IO');" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
                                     </td>
                                     <td>Mauris</td>
                                 </tr>
@@ -494,7 +492,7 @@
                                                 <li><a href="#">Separated link</a></li>
                                             </ul>
                                         </div>
-                                        <a href="#" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
+                                        <a href="#" onclick="chosenstyle('EE');" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
                                     </td>
                                     <td>arcu</td>
                                 </tr>
@@ -516,7 +514,7 @@
                                                 <li><a href="#">Separated link</a></li>
                                             </ul>
                                         </div>
-                                        <a href="#" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
+                                        <a href="#" onclick="chosenstyle('MC');" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
                                     </td>
                                     <td>aptent</td>
                                 </tr>
@@ -538,14 +536,14 @@
                                                 <li><a href="#">Separated link</a></li>
                                             </ul>
                                         </div>
-                                        <a href="#" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
+                                        <a href="#" onclick="chosenstyle('AA');" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
                                     </td>
                                     <td>litora</td>
                                 </tr>
                                 <tr>
                                     <td>1,013</td>
                                     <td>AOK</td>
-                                    <td>per</td>
+                                    <td>EE</td>
                                     <td>258.00</td>
                                     <td>
                                         <div class="btn-group">
@@ -560,7 +558,7 @@
                                                 <li><a href="#">Separated link</a></li>
                                             </ul>
                                         </div>
-                                        <a href="#" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
+                                        <a href="#" onclick="chosenstyle('EE');" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
                                     </td>
                                     <td>nostra</td>
                                 </tr>
@@ -582,7 +580,7 @@
                                                 <li><a href="#">Separated link</a></li>
                                             </ul>
                                         </div>
-                                        <a href="#" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
+                                        <a href="#" onclick="chosenstyle('CB');" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
                                     </td>
                                     <td>Curabitur</td>
                                 </tr>
@@ -604,7 +602,7 @@
                                                 <li><a href="#">Separated link</a></li>
                                             </ul>
                                         </div>
-                                        <a href="#" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
+                                        <a href="#" onclick="chosenstyle('EE');" class="btn btn-primary btn-xs"><span class="fui-document"></span></a>
                                     </td>
                                     <td>libero</td>
                                 </tr>
@@ -612,65 +610,19 @@
                         </table>
                     </div>
                 </section>
+
+                <a href="#" data-toggle="modal" data-target="#exampleModal">
+                    <div class="alert alert-primary alertnew">
+                        <span class="fui-new"></span> &nbsp;&nbsp;&nbsp; New
+                        <b ></b>
+                    </div>
+                </a>
+
             </div>
         </div><!-- Right -->
     </div><!--  Entire Width of the View Port -->
     <!-- Footer -->
-    <footer class="footer text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Location</h4>
-                    <p class="lead mb-0">
-                        2215 John Daniel Drive
-                        <br>Clark, MO 65243
-                    </p>
-                </div>
-                <div class="col-md-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Around the Web</h4>
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item">
-                            <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                                <i class="fa fa-fw fa-facebook"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                                <i class="fa fa-fw fa-google-plus"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                                <i class="fa fa-fw fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                                <i class="fa fa-fw fa-linkedin"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                                <i class="fa fa-fw fa-dribbble"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h4 class="text-uppercase mb-4">About Freelancer</h4>
-                    <p class="lead mb-0">
-                        Freelance is a free to use, open source Bootstrap theme created by
 
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <div class="copyright py-4 text-center text-white">
-        <div class="container">
-            <small>Copyright &copy; Your Website 2018</small>
-        </div>
-    </div>
     <!-- Modal Begin-->
     <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -870,10 +822,10 @@
     <script>
         // img click
 
-        $('.imgstyle').on('click', function () {
+        //$('.imgstyle').on('click', function () {
 
-            $('#navbm')[0].click();
-        });
+        //    $('#navbm')[0].click();
+        //});
 
 
     </script>
@@ -888,12 +840,22 @@
             });
         */
         function chosenstyle(stylecode) {
-            alert(stylecode);
-            /*var win = window.open("quotationflatui.html");
+           /* alert(stylecode);
+            var win = window.open("quotationflatui.html");
             win.focus();*/
-            window.location.href = 'quotationflatui.html';
+            window.location.href = 'quotationflatui.html#' + stylecode;
 
-        }
+        };
+
+        function vendorset(vendorname) {
+            if (vendorname === null) {
+                $('.alertnew b').html('');
+               // $('.alertnew').attr('disabled');
+            }
+            else {
+                $('.alertnew b').html(vendorname);
+            }
+        };
     </script>
 </body>
 </html>
