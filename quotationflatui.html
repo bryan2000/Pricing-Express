@@ -1304,6 +1304,7 @@
                     */
         function itementer() {
             $("#divdetails").animate({ scrollTop: $("#divdetails")[0].scrollHeight }, 1000);
+            $('html,body').animate({ scrollTop: $("#itemdetail").offset().top});
         };
 
         function dashboard() {
