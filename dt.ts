@@ -3,9 +3,9 @@ export interface styleCode{
     name: string;
     img:string;
     }
-  
    
-  
+    
+   
    export interface stockItem{
     id:string;
     code:string;
@@ -20,8 +20,6 @@ export interface styleCode{
     price3:number;
     cost:number;
      }
-
-
      export interface quotItem{
     quotid: string;
     quotitemid:string;
@@ -38,26 +36,26 @@ export interface styleCode{
     qty: number;
     price:number; //assembled price
     price2:number; // kd price
-    price3:number;// special price
-    discount:number; // applied discount amount of the item from vendor setting,;
+    prices3:number;// special price
+    discount:number; // discount amount;
     cost:number;
+    tax: number;
      stock:string; // low InStock out
     }
-  
+   
     export interface quotItemSummary{
       cabinet:number; //Piece
       accessary:number; // piece
       others:number; // piece
       totalpiece:number;//piece
-      
+     
       discount:number;
       subtotal:number;
       tax:number;
-  
-      deliveryfee:number;
+       deliveryfee:number;
       total:number;
+
       styles:number;
-  
+ 
+   
     }
- 
- 
