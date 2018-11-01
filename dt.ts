@@ -4,7 +4,15 @@ export interface styleCode{
     img:string;
     }
    
-    
+ export  interface addressInfo{
+  storeid:string;
+  name:string;
+  address:string;
+  phone:string;
+  contact:string;
+  memo:string;
+}
+   
    
    export interface stockItem{
     id:string;
