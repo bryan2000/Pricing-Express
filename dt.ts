@@ -61,7 +61,7 @@ export interface styleCode{
 
 
   export  interface addressInfo{
-    storeid:string;
+    addressid:string;
     name:string;
     address1:string;
     address2: string;
