@@ -82,8 +82,8 @@ export interface styleCode{
     quotid: string;
     po:string;
     reference:string;
-    etadate:string;
-    quotdate:string;
+    etadate:Date;
+    quotdate:Date;
     displayprice:boolean;
     fullkd:boolean;
 
