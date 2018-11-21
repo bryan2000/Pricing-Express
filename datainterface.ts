@@ -63,6 +63,7 @@ export interface styleCode{
   export  interface addressInfo{
     addressid:string;
     name:string;
+    companyname:string;
     address1:string;
     address2: string;
     city:string;
@@ -80,12 +81,20 @@ export interface styleCode{
 
   export interface quotHeader{
     quotid: string;
+    vendorname:string;
+    vendornum:number;
+    vendoraddressid:string;
+    customernum:number;
+    customername:string;
+    shippingaddressid:string;
     po:string;
     reference:string;
     etadate:Date;
     quotdate:Date;
     displayprice:boolean;
     fullkd:boolean;
+    crtstage:string;
+    printed:boolean;
 
 
   }
