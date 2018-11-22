@@ -95,6 +95,8 @@ export interface styleCode{
     fullkd:boolean;
     crtstage:string;
     printed:boolean;
+    termsnet:number;
+    discount:number;
 
 
   }
